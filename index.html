@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/CSS/Benzswap-index.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./BENSWAP-LOGO-12-removebg-preview.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Combo&family=Poppins&family=Rubik:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GOOGLE FONT ICON CDN -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Combo&family=Mulish&family=Poppins&family=Rubik:wght@500&display=swap"
+        rel="stylesheet">
+    <title>BenzSwap.com</title>
+</head>
+
+<body class="">
+    
+
+    
+    <header class="header all-borders">
+        <div class="all-nav-bar all-borders">
+            <div class="logo all-borders">
+
+                <div class="logoImage all-borders">
+                    <img src="./Assets/images/benzswap-logo/BENZSWAP-LOGO-NEW.png" alt="benzSwap official logo.">
+                </div>
+            </div>
+
+            <input type="checkbox" class="menu-btn" id="menu-btn" style="display: none;">
+
+            <label for="menu-btn" class="menu-icon">
+                <span class="menu-icon">
+                    <i class="fa-sharp fa-solid fa-bars"></i>
+                </span>
+            </label>
+
+            <label for="menu-btn" class="menu-icon">
+                <span class="material-symbols-sharp"> close
+                </span>
+            </label>
+            <!-- Beginnning of Navigation Section -->
+            <nav>
+                <!-- Beginning of  responsive menu container control section -->
+
+                <!-- End of responsive Menu container control section -->
+
+                <!-- Beginning of Main Navigation control List -->
+                <ul class="menu navigation-lists all-borders">
+                    <!-- Beginning of Sub-Navigation Container for List-items-->
+                    <div class="navigation-list-items all-borders">
+                       
+                        <!-- Beginning of Product dropdown Menu -->
+                        <input type="checkbox" class="product-sub-menu-btn" id="product-sub-menu-btn" style="display: none;">
+                        
+                        <li class="product-menu active all-borders">
+                            <a href="./index.html">
+                                <label for="product-sub-menu-btn" class="Product all-borders">Product
+                                </label>
+                                <span class="material-symbols-sharp">
+                                    expand_more
+                                </span>
+                            </a>
+                            <!-- Begnning of subMenu for Product -->
+                        <ul class="sub-menu all-borders" style="opacity: 0; display: none;">
+                            <!--Begnning of trade in Product subMenu -->
+                            <li class="trade-product-subMenu all-borders">
+                                <!-- Trade content -->
+                                <div class="product-subMenu-contents all-borders">
+                                    <div class="subMenu-image trade-image all-borders">
+                                        <a href="#" class="trade-image-link-product all-borders">
+
+                                            <img src="./Assets/images/UI/trade-product.png" 
+                                            alt="trade image in product drop down menu"
+                                            class="trade-product all-borders"> 
+                                            </a>
+                                    </div>
+
+                                    <div class="subMenu-content trade-contents all-borders">
+                                        <a href="#" class="trade-link-product all-borders">
+
+                                            <h5 class="trade">
+                                                Trade
+                                            </h5>
+                                            <p class="trade-text all-borders">
+                                                Trade various tokens on polygon network
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <!-- End of trade in Product subMenu -->
+
+                            <!-- Begnning of pools for Product subMenu -->
+                            <li class="pools-product-subMenu all-borders">
+
+                                
+                                <!-- Pools content -->
+                                <div class="product-subMenu-contents all-borders">
+                                    <div class="subMenu-image pools-image all-borders">
+                                        <a href="#" class="pools-image-link-product all-borders">
+
+                                            <img src="./Assets/images/UI/pools-product.png" alt="Pool image in product dropdown menu"
+                                            class="pools-product all-borders">
+                                        </a>
+                                    </div>
+
+                                    <div class="subMenu-content pools-contents all-borders">
+                                        <a href="#" class="pools-link-product all-borders">
+
+                                            <h5 class="pools">
+                                                Pools
+                                            </h5>
+                                            <p class="pools-text all-borders">
+                                                Provide liquidity across various pools
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- End of pools in Product subMenu -->
+
+                        </ul>
+                        <!-- End of subMenu for Product -->
+                        </li>
+                        <!-- End of Product dropdown Menu -->
+
+
+                        <!--beginning of Governance Menu  -->
+                        <input type="checkbox" class="governance-sub-menu-btn" id="governance-sub-menu-btn" style="display: none;">
+
+                        <li class="governance-menu all-borders">
+                            <a href="#">
+                                <label for="governance-sub-menu-btn" class="governance all-borders">Governance
+                                </label>
+                                <span class="material-symbols-sharp"> expand_more </span>
+                            </a>
+                            <!-- Begnning of subMenu for Governance -->
+                        <ul class="sub-menu all-borders" style="opacity: 0; display: none;">
+
+                            <!-- Begnning of subMenu for Product -->
+                            <li class="governance-product-subMenu all-borders">
+                                <!-- Governance content -->
+                                <div class="governance-subMenu-contents all-borders">
+                                    <div class="subMenu-image token-image all-borders">
+                                        <a href="#" class="token-image-link-governance all-borders">
+                                            <img src="./Assets/images/UI/token-governance.png"
+                                            alt="token image in governance drop down menu"
+                                            class="token-governance all-borders">
+                                        </a>
+                                    </div>
+
+                                    <div class="subMenu-content token-contents all-borders">
+                                        <a href="#" class="token-link-governance all-borders">
+                                            <h5 class="token">
+                                                Token
+                                            </h5>
+                                            <p class="token-text all-borders">
+                                                A detailed review of $BENZ token
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </li>
+
+                            <li class="vote-governance-subMenu all-borders">
+
+                                
+                                <!-- Vote content -->
+                                <div class="governance-subMenu-contents all-borders">
+                                    <div class="subMenu-image vote-image all-borders">
+                                        <a href="#" class="vote-image-link-governance all-borders">
+                                            <img src="./Assets/images/UI/vote-governance.png"
+                                            alt="vote image in governance dropdown menu"
+                                            class="vote-governance all-borders">
+                                        </a>
+                                    </div>
+
+                                    <div class="subMenu-content vote-contents all-borders">
+                                        <a href="#" class="vote-link-governance all-borders">
+                                            <h5 class="vote">
+                                                Vote
+                                            </h5>
+                                            <p class="vote-text all-borders">
+                                                Track proposal statuses and vote on changes
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                            <!-- End of subMenu for Governance -->
+                        </li>
+                        <!--End of Governance Menu  -->
+
+
+
+                        <!--beginning of Developers Menu  -->
+                        <input type="checkbox" class="developers-sub-menu-btn" id="developers-sub-menu-btn" style="display: none;">
+                    
+                        <li class="developers-menu all-borders">
+                            <a href="#">
+                                <label for="developers-sub-menu-btn" class="developers all-borders">Developers
+                                </label>
+                                <span class="material-symbols-sharp"> expand_more </span>
+                            </a>
+
+                            <ul class="sub-menu all-borders" style="opacity: 0; display: none;">
+                                <li class="docs-developers-subMenu all-borders">
+                                        <!-- Doc content -->
+                                        <div class="developers-subMenu-contents all-borders">
+                                            <div class="subMenu-image docs-image all-borders">
+                                                <a href="#" class="docs-image-link-developers all-borders">
+                                                    <img src="./Assets/images/UI/docs-developers.png" alt="docs image in developers drop down menu" class="docs-developers all-borders">
+                                                </a>
+                                            </div>
+    
+                                            <div class="subMenu-content docs-contents all-borders">
+                                                <a href="#" class="github-image-link-developers all-borders">
+                                                    <h5 class="docs">
+                                                        Docs
+                                                    </h5>
+                                                    <p class="docs-text all-borders">
+                                                        A detailed review of how BenzSwap works
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        
+                                </li>
+                                    
+                                <li class="Github-developers-subMenu all-borders">
+    
+                                <!-- </li> -->
+                                        <!-- Github content -->
+                                        <div class="developers-subMenu-contents all-borders">
+                                            <div class="subMenu-image github-image all-borders">
+                                                <a href="#" class="github-image-link-developers all-borders">
+                                                    <img src="./Assets/images/UI/github-developers.png" alt="github image in developers dropdown menu" class="github-developer all-borders">
+                                                </a>
+                                            </div>
+                                            
+                                            <div class="subMenu-content github-contents all-borders">
+                                                <a href="#" class="github-developers all-borders">
+                                                    
+                                                    <h5 class="github">
+                                                        Github
+                                                    </h5>
+                                                    <p class="github-text all-borders">
+                                                        Detailed documentations of BenzSwap's code
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                
+                            </ul>
+                        </li>
+                        <!--End of Developers Menu  -->
+
+
+                        <!--beginning of community Menu  -->
+                        
+                            <input type="checkbox" class="community-sub-menu-btn" id="community-sub-menu-btn" style="display: none;">
+                            <li class="community-menu all-borders">
+                            <a href="#">
+                                <label for="community-sub-menu-btn" class="community all-borders">Community
+                                </label>
+                                <span class="material-symbols-sharp"> expand_more </span>
+                            </a>
+                            <!-- Begnning of subMenu for Community Social Media handles -->
+
+                            <ul class="sub-menu all-borders" style="opacity: 0; display: none;">
+                                <!-- beginning of twitter content in community sub-menu -->
+                                <li class="twitter-product-subMenu all-borders">
+                                        <div class="community-subMenu-contents all-borders">
+                                            <div class="subMenu-image twitter-image all-borders">
+                                                <a href="#" class="twitter-image-link-community all-borders">
+
+                                                    <img src="./Assets/images/social-media/twitter-community.png" alt="trade image in product drop down menu" class="trade-product all-borders">
+                                                </a>
+                                                </div>
+                                                
+                                                <div class="subMenu-content twitter-contents all-borders">
+                                                <a href="#" class="twitter-link-community all-borders">
+                                                <h5 class="Twitter">
+                                                    Twitter
+                                                </h5>
+                                                <p class="twitter-text all-borders">
+                                                    Visit BenzSwap's twitter account
+                                                </p>
+
+                                                </a>
+                                            </div>
+                                        </div>
+                                        
+                                </li>
+                                <!-- end of twitter content in community sub-menu -->
+                                 
+                                
+                                <!-- beginning Telegram content in community sub-menu -->
+                                <li class="telegram-community-subMenu all-borders">
+    
+                                        <div class="community-subMenu-contents all-borders">
+                                            <div class="subMenu-image telegram-image all-borders">
+                                                <a href="#" class="telegram-image-link-community all-borders">
+                                                    <img src="./Assets/images/social-media/telegram-community.png" alt="Pool image in product dropdown menu" class="pools-product all-borders">
+                                                </a>
+                                            </div>
+                                            
+                                            <div class="subMenu-content telegram -contents all-borders">
+                                                <a href="#" class="telegram-link-community all-borders">
+                                                    
+                                                    <h5 class="telegram">
+                                                        Telegram
+                                                    </h5>
+                                                    <p class="telegram-text all-borders">
+                                                        Interact with other BenzSwap users on telegram
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </li> 
+                                <!-- end of Telegram content in community sub-menu -->
+                                                            
+
+                                <!-- beginning of Discord content in community sub-menu -->
+                            <li class="discord-community-subMenu all-borders">
+                                <!-- Discord content -->
+                                <div class="community-subMenu-contents all-borders">
+                                    <div class="subMenu-image discord-image all-borders">
+                                        <a href="#" class="discord-image-link-community all-borders">
+
+                                            <img src="./Assets/images/social-media/discord-community.png" alt="discord image in community drop down menu" class="discord-community all-borders">
+                                        </a>
+                                    </div>
+
+                                    <div class="subMenu-content discord-contents all-borders">
+                                        <a href="#" class="discord-link-community all-borders">
+
+                                            <h5 class="discord">
+                                                Discord
+                                            </h5>
+                                            <p class="discord-text all-borders">
+                                                Interact with BenzSwap users on Discord
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- end of Discord content in community sub-menu -->
+
+
+                            <!-- beginning of Careers content in community sub-menu -->
+                        <li class="careers-community-subMenu all-borders">
+
+                                
+                                <!-- Careers content -->
+                                <div class="community-subMenu-contents all-borders">
+                                    <div class="subMenu-image careers-image all-borders">
+                                        <a href="#" class="careers-image-link-community all-borders">
+                                            <img src="./Assets/images/social-media/careers-community.png" alt="careers image in community dropdown menu" class="careers-product all-borders">
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="subMenu-content careers-contents all-borders">
+                                        <a href="#" class="careers-link-community all-borders">
+
+                                            <h5 class="careers">
+                                                Careers
+                                            </h5>
+                                            <p class="careers-text all-borders">
+                                                Checkout possible job opportunities in BenzSwap
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                        </li> 
+                        <!-- end of Careers content in community sub-menu -->
+
+                        </ul>
+                        </li>
+                        <!-- End of Community Menu -->
+
+
+                        <!--beginning of Blog Menu  -->
+                        <li class="blog-menu all-borders">
+                            <a href="#">
+                                <label for="menu-btn" class="blog all-borders">Blog
+                                </label>
+                                <span class="material-symbols-sharp" style="display: none;"> expand_more </span>
+                            </a>
+                        </li>
+                        <!--End of Blog Menu  -->
+
+
+
+                        <!-- <li class="documents all-borders"><a href="#"><label for="menu-btn" class="docs all-borders">Docs</label></a></li> -->
+
+                    </div>
+                    
+                    <!-- End of Sub-Navigation Container for List-items -->
+                </ul>
+                <!-- End of Main Navigation control List -->
+
+
+
+                <!-- Beginning Launch App button within the navigation bar -->
+                <div class="launch-app-container all-borders">
+                    <li class="launch-app all-borders"><a href="#"> <label for="menu-btn"
+                                class="launchApp all-borders">Launch App</label></a></li>
+                </div>
+                <!-- End of Launch App button within the navigation control List -->
+
+            </nav>
+            <!-- End of Navigation Section -->
+
+        </div>
+    </header>
+    <main class="all-containers all-borders">
+
+        <!-- beginning of First Section -->
+    <section class="first-section all-borders">
+        <div class="background-video-animation all-borders">
+            <video  preload="auto" autoplay muted loop>
+                <source src="./Assets/videos/bg video_0_COMPRESSED.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="welcome-to-BenzSwap-general-container all-borders">
+           <div class="welcome-to-BenzSwap-exchange all-borders">
+            <div class="welcome-to-BenzSwap all-borders">
+                <h6 class="welcome all-borders">
+                    Welcome to BenzSwap
+                </h6>
+            </div>
+            <div class="decentralized-Exchange-polygon-and-network all-borders">
+                <h1 class="decentralized-exchange all-borders">
+                    Decentralized Exchange
+                </h1>
+                <h1 class="designed-polygon all-borders">
+                    Designed for <span class="all-polygon allborders">
+                        all Polygon
+                    </span>
+                </h1>
+                <h1 class="network-users all-borders">
+                    Network Users
+                </h1>
+            </div>
+            <div class="seamless-Exchange all-borders">
+                <small>
+                <p class="seamless-exchange all-borders">
+                        seamlessly exchange tokens via smart contracts and without the need for a custodial wallet to hold assets of the users.
+                    </p>
+                </small>
+            </div>
+           </div>
+
+
+           <div class="launch-app-container all-borders">
+                <li class="launch-app all-borders">
+                <a href="#"> 
+                    <label for="menu-btn" class="launchApp all-borders">
+                        Launch App
+                    </label>
+                </a>
+                </li>
+
+                <li class="launch-app all-borders">
+                <a href="#">
+                    <label for="menu-btn" class="launchApp all-borders explore">
+                        Explore
+                    </label>
+                </a>
+                </li>
+           </div>
+        </div>
+
+    </section>
+
+        <!-- End of first section -->
+
+
+
+    <!-- <footer class="all-footer all-borders">
+        <div class="all-footer-contents all-borders">
+
+
+            <div class="logo-and-newsletter-for-mobile all-borders">
+
+
+
+                <div class="footer-benzswap-logo all-borders">
+                    <a href="#" class="all-borders"> 
+                    <img src="./Assets/images/benzswap-logo/BENSWAP-LOGO-14-removebg-preview.png" alt="benzSwap official logo (footer)" class="all-borders"> &nbsp; 
+                    <span class="benzSwap-logo-footer-text all-borders">
+                        BENZSWAP
+                    </span>
+                    </a>
+                </div>
+                <div class="newsletter-details all-borders" style="display: none;">
+
+                    <h3>subscribe to our newsletter</h3>
+                    <div class="newsletter-input-details">
+                        <input type="email" placeholder="Email Address" name="subscribe-email"> &nbsp;
+                        <button><span class="material-symbols-sharp">
+                                arrow_forward
+                            </span></button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="company-details all-borders">
+                
+                <a href="#" class="all-borders">
+                    <h3 class="all-borders">
+                        Company
+                    </h3>
+                </a>
+
+                <a href="#" class="all-borders">
+                    <h3 class="all-borders">
+                        About
+                    </h3>
+                </a>
+
+                <a href="#" class="all-borders">
+                    <h3 class="all-borders">
+                        Privacy Policy
+                    </h3>
+                </a>
+
+                <a href="#" class="all-borders">
+                    <h3 class="all-borders">Terms & Conditions</h3>
+                </a>
+
+                <a href="#" class="all-borders">
+                    <h3 class="all-borders">FAQ</h3>
+                </a>
+            </div>
+
+
+            <div class="learn-more-details all-borders">
+
+                <a href="#" class="all-borders">
+                    <h3 class="all-borders">
+                        Learn More
+                    </h3>
+                </a>
+
+
+
+                <a href="#" class="all-borders">
+                    <h3 class="all-borders">
+                    How it works
+                    </h3>
+                </a>
+
+
+
+                <a href="#" class="all-borders">
+                    <h3 class="all-borders">
+                        Partners
+                    </h3>
+                </a>
+
+
+
+                <a href="#" class="all-borders">
+                    <h3 class="all-borders">
+                    Help center
+                    </h3>
+                </a>
+
+
+            </div>
+
+
+            <div class="quick-link. l....,ms-details all-borders">
+
+                <a href="#" class="all-borders">
+                    <h3 class="all-borders">
+                        Quick Links
+                    </h3>
+                </a>
+
+                <a href="#" class="all-borders">
+                    <h3 class="all-borders">
+                        Support
+                    </h3>
+                </a>
+
+                <a href="#" class="all-borders">
+                    <h3 class="all-borders">
+                        Contact Us
+                    </h3>
+                </a>
+
+                <a href="#" class="all-borders">
+                    <h3 class="all-borders">
+                        Blog
+                    </h3>
+                </a>
+
+            </div>
+
+            <div class="newsletter-details all-borders">
+
+                <h3>Subscribe to our newsletter</h3>
+                <div class="newsletter-input-details">
+                    <input type="email" placeholder="Email Address" name="subscribe-email">
+                    <button><span class="material-symbols-sharp">
+                            arrow_forward
+                        </span></button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- <center> -->
+
+    <!-- <div class="copyright-content all-borders">
+            &copy; 2022 BENZSWAP Inc. All rights reserved
+        </div> -->
+    <!-- </center> -->
+
+    <!-- <div class="mode-toggle-btn all-borders">
+            <button class="toggle all-borders">
+                
+            </button>
+        </div> -->
+
+    <!-- </footer> -->
+
+
+
+    <!-- <script type="text/javascript" src="./Assets/JS/benzSwap.js">
+
+    </script> -->
+    </main>
+    <script type="text/javascript" src="./Assets/JS/benzSwapJs.js">
+
+    </script>
+</body>
+
+</html>
