@@ -32,9 +32,7 @@ body {
     min-height: 10px;
 
 }
-.all-containers.all-borders {
 
-}
 .header {
     width: 80%;
     margin: auto;
@@ -95,6 +93,7 @@ nav {
     position: absolute;
     right: 0;
     top: 30%;
+    display: none;
 }
 
 nav > ul.all-borders {
@@ -164,7 +163,7 @@ nav > ul > .navigation-list-items > li {
     /* transition */
 }
 
-/* BEGGINNING OF DROPDOWNMENU TRIGGER */
+/* BEGINNING OF DROPDOWNMENU TRIGGER */
 nav > ul > .navigation-list-items.all-borders  > li:hover > ul.sub-menu.all-borders {
     display: revert !important;
     opacity: 1 !important;
@@ -368,21 +367,22 @@ main {
 
 .welcome-to-BenzSwap-general-container.all-borders .launch-app-container.all-borders {
     /* margin-top: 30px; */
-    width: 60%;
+    /* border: var(--default-border); */
+    width: 50%;
     height: 70px;
     margin: 5px auto;
     justify-content: space-between;
 }
 
-.first-section.all-borders .launch-app-container.all-borders {
+/* .first-section.all-borders .launch-app-container.all-borders { */
     /* border: var(--default-border); */
     /* width: 15%; */
-    height: 40px;
+    /* height: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 15px;
-}
+} */
 
 
 
@@ -423,10 +423,13 @@ main {
 
 
 
+/* END OF DESKTOP SCREEN */
 
 
+/* MEDIA QUERIES FOR DIFFERENT SCREEN SIZES */
 
 
+ /*     --- Media query for mobile screens below 768px --- */
 @media screen and (max-width:768px) {
     body {
     padding: 10px 70px 10px ;
@@ -444,7 +447,19 @@ main {
         width: 100%;
         align-items: flex-start;
     }
-    
+
+    .menu-icon:first-of-type {
+        display: revert;
+    }
+   .header.all-borders .menu-btn1:checked ~ .menu-icon:first-of-type{
+        display: none;
+    }
+
+    .header.all-borders .menu-btn1:checked ~ .menu-icon:nth-of-type(2), .header.all-borders .menu-btn1:checked ~ nav, nav > ul > .navigation-list-items.all-borders {
+        display: revert !important;
+    }
+
+
     nav,  nav > ul > .navigation-list-items.all-borders {
         width: 100%;
         flex-direction: column;
@@ -497,7 +512,7 @@ main {
         width: 200px;
         min-height: 350px;
         transition: opacity 1.5s 2s;
-        background: #fff;
+        /* background: #fff; */
         z-index: 1000;
     }
 
@@ -509,52 +524,58 @@ main {
         left: -10; */
     /* } */
 
-    .launch-app-container.all-borders {
+   .header .launch-app-container.all-borders {
         width: fit-content;
-        top: 200px;
+        top: 155px;
         position: absolute;
         /* bottom: 67.5%; */
-        /* left: 0; */
+        left: 0;
         margin: 5px 0;
+        border: var(--default-border);
+        border-radius: var(--btn-border-radius);
     }
 
+    /* First section Beginning for a mobile screen */
+    
+    .welcome-to-BenzSwap-general-container.all-borders {
+        top: 20%;
+        left: 5%;
+        width: 90%;
+        min-height: 300px;
+    }
+    
+    .seamless-exchange.all-borders {
+        width: 75%;
+        margin: auto;
+    }
+    
+    .first-section.all-borders .launch-app-container.all-borders {
+        /* border: var(--default-border); */
+        width: 55%;
+        left: 20%;
+        top: 75%;
+        margin-top: 10px;
+    }
 } 
 
-/* First ection Beginning for a mobile screen */
 
-.welcome-to-BenzSwap-general-container.all-borders {
-    top: 10%;
-    left: 5%;
-    width: 90%;
-    min-height: 300px;
-}
-
-.seamless-exchange.all-borders {
-    width: 64%;
-    margin: auto;
-}
-
-.first-section.all-borders .launch-app-container.all-borders {
-    /* border: var(--default-border); */
-    width: 55%;
-    left: 20%;
-    top: 75%;
-    margin-top: 10px;
-}
-
-@media screen and (min-width:601px) and (max-width: 700px) {
+@media screen and (min-width:601px) and (max-width: 649px) {
     
     /* .welcome-to-BenzSwap-general-container.all-borders h1 { */
         /* font-size: 2rem; */
         /* font-weight: 700; */
         /* line-height: 2rem; */
     /* } */
-
+    .decentralized-Exchange-polygon-and-network.all-borders h1 {
+        font-size: 1.8rem;
+    }
+    
     .seamless-exchange.all-borders {
         width: 80%;
     }
     .first-section.all-borders .launch-app-container.all-borders {
-       top: 70%;
+       width: 65%;
+        top: 70%;
     }
 }
 
@@ -562,7 +583,7 @@ main {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 561px)and (max-width: 600px) {
 
 
 
@@ -573,7 +594,9 @@ main {
         min-height: 300px;
     }
 
-       
+    .decentralized-Exchange-polygon-and-network.all-borders h1 {
+        font-size: 1.8rem;
+    }  
     .seamless-exchange.all-borders {
         width: 80%;
     }
