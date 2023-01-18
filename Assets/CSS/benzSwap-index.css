@@ -10,6 +10,7 @@
     --main-background: #000;
     --main-pink: #db677a;
     --main-header-font: 'Rubik', sans-serif;
+    --main-content-font: 'Mulish', sans-serif;
     --btnBackgroundColor: #F35F9B;
     --btn-border-radius: 20px;
     --main-content-font-family: 'Mulish', sans-serif;
@@ -19,28 +20,49 @@
 }
 body {
     /* background: var(--main-background); */
-    padding: 10px 120px 100px ;
+    border: var(--default-border);
+    padding: 1% 10% 3% ;
+    /* min-height: 100vh; */
     position: relative;
     background: #000;
     color: #fff;
 
 
 }
-
+ /* Beginning of Universal Stylings */
 .all-borders {
     /* border: var(--default-border); */
     min-height: 10px;
 
 }
 
+
+
+/* Universal Stylings for all sections */
+section.all-borders {
+    margin: 25px auto;
+}
+
+
+h3, h1 {
+    font-family: var(--main-header-font);
+
+}
+.blue-text.all-borders {
+    color: #0193FA;
+}
+
+/* End of universal stylings */
+
 .header {
-    width: 80%;
+    width: 100%;
     margin: auto;
-    max-height: 80px;
-    position: absolute;
+    height: 80px;
+    position: relative;
     top: 0px;
     z-index: 1000;
     background-color: transparent;
+    padding: 5px 0;
     /* color: #fff; */
     font-family: var(--main-header-font);
 
@@ -49,13 +71,15 @@ body {
 .all-nav-bar.all-borders {
     /* border: var(--default-border); */
     width: 100%;
+    max-height: 80px ;
     /* margin: auto; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
     color: #fff;
-    position: relative;
+    position: absolute;
+
 }
 
 .logo {
@@ -114,7 +138,7 @@ nav > ul > .navigation-list-items.all-borders {
     width: 100%;
     height: 100%;
     margin: 0 auto 0 0;
-    padding-left: 17%;
+    padding-left: 15%;
     /* margin-right: 200px; */
 }
 
@@ -188,6 +212,10 @@ nav > ul > .navigation-list-items.all-borders  > li:hover > ul.sub-menu.all-bord
 
 .sub-menu.all-borders > li > div > div:nth-child(2) {
     margin: 0 10px ;
+}
+
+.sub-menu.all-borders li a {
+    text-decoration: none;
 }
 .sub-menu.all-borders p {
     font-size: 0.6rem;
@@ -264,13 +292,13 @@ ul a {
 .launch-app-container.all-borders {
     /* border: var(--default-border); */
     width: 15%;
-    height: 40px;
+    min-height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .launch-app.all-borders {
-    border-radius: var(--btn-border-radius);
+    /* border-radius: var(--btn-border-radius); */
     /* border: 1px solid; */
     width: 100%;
     display: flex;
@@ -278,12 +306,17 @@ ul a {
 
 }
 .launchApp.all-borders {
-    /* border-radius: var(--btn-border-radius); */
+    border-radius: var(--btn-border-radius);
     /* border: 1px solid; */
     display: inline-block;
     padding: 6px;
     height: fit-content;
     width: 100%;
+}
+
+.header .launchApp.all-borders {
+    border: 2px solid #0193FA;
+    background-color: transparent;
 }
 .launch-app-container.all-borders a {
     /* display: flex; */
@@ -301,65 +334,84 @@ ul a {
 
 /* Beginning of First Section */
 
-
-main {
-    width: 80%;
-    height: fit-content;
-    position: absolute;
-    top: 0;
-    z-index: 0;
+.all-containers.all-borders {
+    min-height: 50vh;
 
 }
+
+main {
+    width: 100%;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    font-family: var(--main-content-font);
+    font-weight: 400;
+
+}
+
+
 .first-section.all-borders {
     margin:auto;
     background: transparent;
-    max-height: 70vh;
+    min-height: 48vh;
     width: 100%;
     /* border: var(--default-border); */
     outline: none;
     position: relative;
+   
+
 }
 
 
 .background-video-animation.all-borders {
-    height: 100%;
-    width: 100%;
+    min-height: 30vh;
+    position: relative;
 
 }
 
 
 
 .background-video-animation.all-borders > video {
-    height: 64vh;
-    width: 100%;
+    max-height: 55vh;
+    width: 80%;
+    margin: auto;
     object-fit: cover;
     background: #1A1C20;
+    width: 100%;
+    position: absolute;
+    top: -30%;
+    /* left: 5%; */
 
 }
 
 .welcome-to-BenzSwap-general-container.all-borders {
     position: absolute;
-    top: 31%;
-    left: 25%;
-    width: 50%;
+    top: 15%;
+    left: 5%;
+    /* z-index: 1200; */
+    width: 90%;
     margin: auto;
     text-align: center;
     font-family: rubik;
-    min-height: 300px;
+    max-height: fit-content;
+    color: #fff;
 }
 .welcome.all-borders {
+    font-size: 0.8rem;
     font-weight: 100;
     color: rgba(255, 255, 255, 0.80);
 }
 .welcome-to-BenzSwap-general-container.all-borders h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 700;
+    width: 100%;
     /* line-height: 2rem; */
 }
 
 .seamless-exchange.all-borders {
-    width: 70%;
+    width: 40%;
     margin: auto;
+    font-size: 0.8rem;
 }
 
 
@@ -368,21 +420,13 @@ main {
 .welcome-to-BenzSwap-general-container.all-borders .launch-app-container.all-borders {
     /* margin-top: 30px; */
     /* border: var(--default-border); */
-    width: 50%;
-    height: 70px;
+    width: 35%;
+    /* height: 70px; */
     margin: 5px auto;
     justify-content: space-between;
 }
 
-/* .first-section.all-borders .launch-app-container.all-borders { */
-    /* border: var(--default-border); */
-    /* width: 15%; */
-    /* height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 15px;
-} */
+
 
 
 
@@ -393,20 +437,13 @@ main {
     display: flex;
     align-items: center;
     border: 2px solid;
-    /* border-image-source: linear-gradient(90deg, #064DE3 0%, #0193FA 100%); */
-
-    
-    
-    
 }
 
 
 .first-section.all-borders .launch-app-container.all-borders > li:first-child {
     background: linear-gradient(90.16deg, #064EE3 0.14%, #0193FA 99.87%);
     border:var(--default-border) transparent;
-
-    
-    
+   
 }
 
 .first-section.all-borders .launch-app-container.all-borders > li:nth-child(2) {
@@ -415,6 +452,38 @@ main {
 
 
 }
+
+/* End of First Section for - "Welcome to BEnzSwap" for Desktop */
+
+/* Beginning of Second Section for - "Introducing BenzSwap Protocol" for Desktop */
+
+
+section.second-section.all-borders {
+    border: 5px solid;
+    height: 30vh; 
+    width: 100%;
+    color: green; 
+    z-index: 2000; 
+    color: #fff; 
+    margin-top: 30px
+}
+
+.second-section.all-borders > .introducing-benzswap-general-container.all-borders {
+    text-align: center;
+}
+
+.second-section.all-borders .introducing-benzswap.all-borders {
+    width: 50%;
+    margin: auto;
+    font-size: 2rem;
+}
+
+.second-section.all-borders .introducing-benzswap-protocol.all-borders {
+    width: 60%;
+    margin:auto;
+    
+}
+
 
 
 
@@ -428,15 +497,58 @@ main {
 
 /* MEDIA QUERIES FOR DIFFERENT SCREEN SIZES */
 
+@media screen  and (min-width:769px) and (max-width:1200px) {
+    
+    nav {
+        font-size: 0.8rem;
+    }
+    nav > ul.all-borders > .navigation-list-itemms.all-borders > li {
+        /* width: 40%; */
+        margin:  10px 0px;
+    }
+    .menu.navigation-lists.all-borders {
+        /* width: 35%; */
+        /* width: 100%; */
+        padding-left: 5%;
+    }
+
+    nav > ul > .navigation-list-items.all-borders {
+      
+        padding-left: 0%;
+        
+    }
+
+    /* .first-section.all-borders {
+        min-height: 55vh;
+    } */
+
+
+    .seamless-exchange.all-borders {
+        width: 50%;
+       
+    }
+    /* End of First Section */
+
+
+
+    /* Beginning of Second-Section */
+
+    .second-section.all-borders .introducing-benzswap.all-borders {
+        width: 65%;
+        
+    }
+}
 
  /*     --- Media query for mobile screens below 768px --- */
 @media screen and (max-width:768px) {
-    body {
+    /* body {
     padding: 10px 70px 10px ;
-    /* background-color: red; */
+    
 
+    } */
+    .header {
+        height: 55px;
     }
-
     /* begininng of Navigation Bar for a small and medium sized screen */
     nav {
         position: absolute;
@@ -516,13 +628,11 @@ main {
         z-index: 1000;
     }
 
-    /* nav > ul.all-borders { */
-        /* display: block; */
-        /* height: 600px;
-        margin-top: 10%;
-        position: absolute;
-        left: -10; */
-    /* } */
+    nav > ul > .navigation-list-items.all-borders  > li:hover > ul.sub-menu.all-borders {
+        display: none !important;
+        opacity: 0 !important;
+    }
+ 
 
    .header .launch-app-container.all-borders {
         width: fit-content;
@@ -531,154 +641,129 @@ main {
         /* bottom: 67.5%; */
         left: 0;
         margin: 5px 0;
-        border: var(--default-border);
+        /* border: var(--default-border); */
         border-radius: var(--btn-border-radius);
     }
 
-    /* First section Beginning for a mobile screen */
+
+
+    /* Beginning of First Section */
+
+
+    .first-section.all-borders {
+    
+        height: 25vh;
+       
+    }
+
+
+    
+    .background-video-animation.all-borders {
+        max-height: 25vh;
+        position: relative;
+    }
+    .background-video-animation.all-borders > video {
+        max-height: 55vh;
+        width: 80%;
+        margin: auto;
+        object-fit: cover;
+        background: #1A1C20;
+        width: 100%;
+        position: absolute;
+        top: -30%;
+        /* left: 5%; */
+    }
     
     .welcome-to-BenzSwap-general-container.all-borders {
-        top: 20%;
-        left: 5%;
-        width: 90%;
-        min-height: 300px;
+        top: 5%;
+        
+    }
+    .welcome.all-borders {
+        
+        font-size: 0.8rem;
+        font-weight: 700;
+        width: 100%;
+    
+    }
+   
+    .welcome-to-BenzSwap-general-container.all-borders h1 {
+        font-size: 2rem;
+        
     }
     
     .seamless-exchange.all-borders {
-        width: 75%;
-        margin: auto;
+        width: 80%;
     }
     
-    .first-section.all-borders .launch-app-container.all-borders {
+
+    .welcome-to-BenzSwap-general-container.all-borders .launch-app-container.all-borders {
         /* border: var(--default-border); */
-        width: 55%;
-        left: 20%;
-        top: 75%;
-        margin-top: 10px;
+        width: 65%;
+        max-height: 70px;
+        margin: 5px auto;
+        justify-content: space-between;
+    }
+
+    /* End of First-Section */
+
+
+    /* Beginning of Second-Section */
+
+    .second-section.all-borders .introducing-benzswap.all-borders {
+        width: 75%;
+        margin: auto;
+        font-size: 2rem;
+    }
+
+
+    .second-section.all-borders .introducing-benzswap-protocol.all-borders {
+        width: 80%;
+        margin: auto;
     }
 } 
 
-
-@media screen and (min-width:601px) and (max-width: 649px) {
+@media screen and (max-width: 548px) {
     
-    /* .welcome-to-BenzSwap-general-container.all-borders h1 { */
-        /* font-size: 2rem; */
-        /* font-weight: 700; */
-        /* line-height: 2rem; */
-    /* } */
-    .decentralized-Exchange-polygon-and-network.all-borders h1 {
-        font-size: 1.8rem;
+    .first-section.all-borders {
+        min-height: 48vh;
     }
-    
-    .seamless-exchange.all-borders {
+
+    .background-video-animation.all-borders {
+        min-height: 48vh;
+        position: relative;
+    }
+
+
+    .background-video-animation.all-borders > video {
+        height: 60vh;
         width: 80%;
-    }
-    .first-section.all-borders .launch-app-container.all-borders {
-       width: 65%;
-        top: 70%;
-    }
-}
-
-
-
-
-
-@media screen and (min-width: 561px)and (max-width: 600px) {
-
-
-
-    .welcome-to-BenzSwap-general-container.all-borders {
-        top: 12%;
-        left: 0;
+        margin: auto;
+        object-fit: cover;
+        background: #1A1C20;
         width: 100%;
-        min-height: 300px;
-    }
-
-    .decentralized-Exchange-polygon-and-network.all-borders h1 {
-        font-size: 1.8rem;
-    }  
-    .seamless-exchange.all-borders {
-        width: 80%;
+        position: absolute;
+        top: -30%;
+        /* left: 5%; */
     }
 
 
-    /* .first-section.all-borders .launch-app-container.all-borders {
-       left: 15%;
-        top: 70%;
-       
-    } */
-}
-
-@media screen and (min-width: 560px) and (max-width: 585px) {
-    
-    .decentralized-Exchange-polygon-and-network.all-borders h1 {
-        font-size: 1.8rem;
-    }
-    
-    .seamless-exchange.all-borders {
-        width: 80%;
+    .welcome-to-BenzSwap-general-container.all-borders h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        width: 100%;
+        /* line-height: 2rem; */
     }
 
-    .first-section.all-borders .launch-app-container.all-borders {
-        width: 65%;
-        top: 60%;
+    .welcome-to-BenzSwap-general-container.all-borders .launch-app-container.all-borders {
+        /* border: var(--default-border); */
+        width: 75%;
+        max-height: 70px;
+        margin: 15px auto auto;
+        justify-content: space-between;
+    }
+
+
+    .second-section.all-borders {
+        border: 5px solid;height: 30vh !important; width: 100%;color: green; z-index: 2000; color: #fff; margin-top: 0px !important;
     }
 }
-
-@media screen and (min-width: 532px) and (max-width: 560px) {
-    .decentralized-Exchange-polygon-and-network.all-borders h1 {
-        font-size: 1.8rem;
-    }
-    
-    .seamless-exchange.all-borders {
-        width: 85%;
-    }
-    .first-section.all-borders .launch-app-container.all-borders {
-       width: 65%;
-        top: 60%;
-    }
-}
-
-
-@media screen and (min-width: 515px) and (max-width: 533px) {
-    
-    .decentralized-Exchange-polygon-and-network.all-borders h1 {
-        font-size: 1.8rem;
-    }
-
-    .seamless-exchange.all-borders {
-        width: 80%;
-    }
-
-    .first-section.all-borders .launch-app-container.all-borders {
-       width: 65%;
-        top: 60%;
-    }
-}
-
-@media screen and (min-width: 450px) and (max-width: 515px) {
-    
-    .decentralized-Exchange-polygon-and-network.all-borders h1 {
-        font-size: 1.8rem;
-    }
-    .seamless-exchange.all-borders {
-        width: 85%;
-    }
-
-    .first-section.all-borders .launch-app-container.all-borders {
-        width: 65%;
-        top: 60%;
-    }
-}
-
-/* @media screen and (max-width: 521px) {
-    .first-section.all-borders .launch-app-container.all-borders {
-       top: 85%;
-    }
-} */
-/* 
-@media screen and (min-width: 450px)and (max-width: 521px) {
-    .first-section.all-borders .launch-app-container.all-borders {
-       top: 85%;
-    }
-} */
