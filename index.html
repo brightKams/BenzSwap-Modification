@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/CSS/Benzswap-index.css" type="text/css">
+    <link rel="stylesheet" href="./CSS/styles.css" type="text/css">
     <link rel="icon" type="image/x-icon" href="./BENSWAP-LOGO-12-removebg-preview.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,13 +24,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Combo&family=Mulish&family=Poppins&family=Rubik:wght@500&display=swap"
         rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css2?family=Combo&family=Karla:wght@700&family=Mulish:ital,wght@0,400;0,600;1,500&family=Open+Sans&display=swap" rel="stylesheet">
     <title>BenzSwap.com</title>
 </head>
 
 <body class="">
     
 
-    
+<div class="general-content all-borders">   
     <header class="header all-borders">
         <div class="all-nav-bar all-borders">
             <div class="logo all-borders">
@@ -501,10 +503,7 @@
            
     </section>
 
-    <!-- <section class="second-section all-borders" style=" border: 5px solid;height: 30vh; width: 100%;color: green; z-index: 2000; color: #fff; margin-top: 30px;">
-            
-           
-    </section> -->
+
         <!-- End of first section -->
 
         <!-- Beginning of Second Section -->
@@ -525,173 +524,501 @@
         </div>
 
     </section>
+        <!-- End of Second Section -->
 
 
+        <!-- Beginning of Third Section - Crypto Images -->
+    <section class="third-section all-borders">
+        <div class="general-crypto-images all-borders">
+            <div class="first-layer-crypto-images all-borders">
+                <div class="unlimited-token-swap-all-container all-borders">
 
-    <!-- <footer class="all-footer all-borders">
-        <div class="all-footer-contents all-borders">
+                <!-- Unlimited token swap content -->
 
-
-            <div class="logo-and-newsletter-for-mobile all-borders">
-
-
-
-                <div class="footer-benzswap-logo all-borders">
-                    <a href="#" class="all-borders"> 
-                    <img src="./Assets/images/benzswap-logo/BENSWAP-LOGO-14-removebg-preview.png" alt="benzSwap official logo (footer)" class="all-borders"> &nbsp; 
-                    <span class="benzSwap-logo-footer-text all-borders">
-                        BENZSWAP
-                    </span>
-                    </a>
-                </div>
-                <div class="newsletter-details all-borders" style="display: none;">
-
-                    <h3>subscribe to our newsletter</h3>
-                    <div class="newsletter-input-details">
-                        <input type="email" placeholder="Email Address" name="subscribe-email"> &nbsp;
-                        <button><span class="material-symbols-sharp">
-                                arrow_forward
-                            </span></button>
-
+                    <div class="unlimited-token-image all-borders">
+                        <img src="./Assets/images/crypto-images/Unlimited-token-swap.png" alt="unlimited-token-image" class="all-borders">
+                        <h4>Unlimited token swap</h4>
                     </div>
 
+                    <div class="unlimited-token-text-content">
+                        <p>BenzSwap protocol will allow users to swap one coin for another through the use of automated liquidity pools powered by the BenzSwap Protocol smart contracts<span id="dots">..........</span>. <br> <span id="moreText"> <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus impedit ex commodi distinctio?</span>
+                        </p>
+                    </div>
+
+                    <button class="learn-more-btn" onclick="learnMore()" id="learnMoreBtn">
+                        Learn More<strong>.....</strong>
+                    </button>
                 </div>
 
+                <!-- Liquidity Pools content -->
+
+                <div class="liquidity-pools-all-container all-borders">
+                    <div class="liquidity-pools-image all-borders">
+                        <img src="./Assets/images/crypto-images/liquidity-pools.png" alt="liquidity-pools-image" class="all-borders">
+                        <h4>Liquidity Pools</h4>
+                    </div>
+
+                    <div class="liquidity-pools-text-content">
+                        <p>Liquidity pools are created when two different tokens are added in equal amount on the BenzSwap exchange to allow them to be traded against each other<span id="dots">..........</span>. <br> <span id="moreText"> <br> Lorem ipsum, dolo r sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus impedit ex commodi distinctio?</span>
+                        </p>
+                    </div>
+
+                    <button class="learn-more-btn" onclick="learnMore()" id="learnMoreBtn">
+                        Learn More<strong>.....</strong>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- End of Crypto Images First Layer -->
+
+            <div class="second-layer-crypto-images all-borders">
+
+                <!-- Beginning of Yield Farming Activities  -->
+                <div class="yield-farming-activities-all-container all-borders">
+
+                <!-- Yield Farming Activities content -->
+
+                    <div class="yield-farming-activities-image all-borders">
+                        <img src="./Assets/images/crypto-images/yield-farming-activities.png" alt="yield-farming-activities-image" class="all-borders">
+                        <h4>Yield Farming Activities</h4>
+                    </div>
+
+                    <div class="yield-farming-activities-text-content">
+                        <p>BenzSwap protocol will allow for yield farming activities that will allow users to earn the exchange native token wwhen they stake their liquidity Provider tokens<span id="dots">..........</span>. <br> <span id="moreText"> <br> Lorem ipsum, dolor  sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus impedit ex commodi distinctio?</span>
+                        </p>
+                    </div>
+
+                    <button class="learn-more-btn" onclick="learnMore()" id="learnMoreBtn">
+                        Learn More<strong>.....</strong>
+                    </button>
+                </div>
+
+                <!-- End of Yield Farming Activities -->
+
+                <!-- Low transaction fees content -->
+
+                <div class="low-transaction-fees-all-container all-borders">
+
+                    <!-- beginning of Low transaction fees content -->
+                    <div class="low-transaction-fees-image all-borders">
+                        <img src="./Assets/images/crypto-images/low-transaction-fees.png" alt="low-transaction-fees-image" class="all-borders">
+                        <h4>Low Transaction Fees</h4>
+                    </div>
+
+                    <div class="low-transaction-fees-text-content">
+                        <p>BenzSwap will be built on the Polygon chain therefore transaction fees experienced will be low compared to other blockchains available<span id="dots">..........</span>. <br> <span id="moreText"> <br> Lorem ipsum,  dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus impedit ex commodi distinctio?</span>
+                        </p>
+                    </div>
+
+                    <button class="learn-more-btn" onclick="learnMore()" id="learnMoreBtn">
+                        Learn More<strong>.....</strong>
+                    </button>
+                </div>
 
             </div>
 
 
+        </div>
+    </section>
+    <!-- End of Third Section - Crypto Images -->
+    
 
-            <div class="company-details all-borders">
+
+    <!-- Beginning of Fourth Section - Benz Token details -->
+    <section class="fourth-section all-borders">
+        <div class="benz-token-general-container all-borders">
+            <div class="benz-token all-borders">
+                <h3 class="benz-token-heading all-borders">
+                    The $BENZ <span class="blue-text all-borders">Token</span>
+                </h3>
+            </div>
+
+            <div class="benz-token-content all-borders">
+                <p class="benz-token-text all-borders">
+                    $BENZ token is the native token of the BenzSwap protocol. It will serve as the utility token that powers every activities within the BenzSwap protocol.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- End of Fourth Section - Crypto Images -->
+
+
+
+    <!-- Beginning of Fifth Section  Benz Token Images-->
+
+    <section class="fifth-section all-borders">
+        <div class="benz-token-images-general-container all-borders">
+
+            <!-- yield Farmig Reward content -->
+            <div class="yield-farming-reward-container all-borders">
+                <div class="benz-token-image all-borders">
+                    <img src="./Assets/images/crypto-images/yield-farming-reward.png" alt="Yield Farming Reward image">
+                </div>
+                <div class="benz-token-text all-borders">
+                    <h4>Yield farming reward</h4>
+                </div>
+                <div class="benz-token-contents all-borders">
+                    <p class="benz-token-text all-borders">
+
+                    <span id="dots">  </span> <br> <span id="moreText"> <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus impedit ex commodi distinctio?</span>
+
+                    </p>
+
+                </div>
+                <button class="learn-more-btn" onclick="LearnMore()" id="learnMoreBtn">
+                    Learn More<strong>.....</strong>
+                </button>
+            </div>
+            <!-- End of Yield Farming Reward  Content-->
+
+            <!-- Beginning of Reward for Liquidity Providers Content -->
+
+            <div class="reward-for-liquidity-providers-container all-borders">
+                <div class="benz-token-image all-borders">
+                    <img src="./Assets/images/crypto-images/reward-forliquidity-providers.png" alt="Reward for liquidity providers image">
+                </div>
+                <div class="benz-token-text all-borders">
+                    <h4>Reward for liquidity providers</h4>
+                </div>
+
+                <div class="benz-token-contents all-borders">
+                    <p class="benz-token-text all-borders">
+                    <span id="dots">   </span> <br> <span id="moreText"> <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus impedit ex commodi distinctio?</span>
+                    </p>
+
+                </div>
+                <button class="learn-more-btn" onclick="LearnMole()" id="learnMoreBtn">
+                    Learn More<strong>.....</strong>
+                </button>
+            </div>
+
+            <!-- End of Reward for liquidity Reward -->
+
+
+             <!-- Beginning of Governance Token Content -->
+
+             <div class="Governance-Token-container all-borders">
+                <div class="benz-token-image all-borders">
+                    <img src="./Assets/images/crypto-images/governance-token.png" alt="Governance Token image">
+                </div>
+                <div class="benz-token-text all-borders">
+                    <h4>Reward for liquidity providers</h4>
+                </div>
+
+                <div class="benz-token-contents all-borders">
+                    <p class="benz-token-text all-borders">
+
+                    <span id="dots">   </span> <br> <span id="moreText"> <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus impedit ex commodi distinctio?</span>
+                    </p>
+
+                </div>
+                <button class="learn-more-btn" onclick="LearnMole()" id="learnMoreBtn">
+                    Learn More<strong>.....</strong>
+                </button>
+            </div>
+
+            <!-- End of Governance Token Content -->
+
+            <!-- Beginning of BenzSwap Protocol Transaction Fee Content -->
+
+            <div class="benzswap-protocol-transaction-fee-container all-borders">
+                <div class="benz-token-image all-borders">
+                    <img src="./Assets/images/crypto-images/benzswap-protocol-transaction-fee.png" alt="Benzswap Protocol Transaction Fee image">
+                </div>
+                <div class="benz-token-text all-borders">
+                    <h4>Reward for liquidity providers</h4>
+                </div>
+
+                <div class="benz-token-contents all-borders">
+                    <p class="benz-token-text all-borders">
+
+                    <span id="dots">   </span> <br> <span id="moreText"> <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus reprehenderit delectus impedit ex commodi distinctio?</span>
+
+                    </p>
+
+                </div>
+                <button class="learn-more-btn" onclick="LearnMole()" id="learnMoreBtn">
+                    Learn More<strong>.....</strong>
+                </button>
+            </div>
+
+            <!-- End of BenzSwap Protocol Transaction Fee Content -->
+
+            <!-- Beginning BenzSwap Token Image -->
+
+            <div class="benzSwap-token-image-container all-borders mobile-view-takeout">
+                <div class="benzSwap-token-image all-borders ">
+                    <img src="./Assets/images/crypto-images/benz token 1.png" alt="Benzswap Protocol Transaction Fee image">
+                </div>
                 
-                <a href="#" class="all-borders">
-                    <h3 class="all-borders">
-                        Company
-                    </h3>
-                </a>
-
-                <a href="#" class="all-borders">
-                    <h3 class="all-borders">
-                        About
-                    </h3>
-                </a>
-
-                <a href="#" class="all-borders">
-                    <h3 class="all-borders">
-                        Privacy Policy
-                    </h3>
-                </a>
-
-                <a href="#" class="all-borders">
-                    <h3 class="all-borders">Terms & Conditions</h3>
-                </a>
-
-                <a href="#" class="all-borders">
-                    <h3 class="all-borders">FAQ</h3>
-                </a>
             </div>
 
 
-            <div class="learn-more-details all-borders">
+        </div>
+    </section>
 
-                <a href="#" class="all-borders">
-                    <h3 class="all-borders">
-                        Learn More
-                    </h3>
-                </a>
+    <!-- End of Fifth-section Benz Token Images -->
 
+    
 
-
-                <a href="#" class="all-borders">
-                    <h3 class="all-borders">
-                    How it works
-                    </h3>
-                </a>
-
-
-
-                <a href="#" class="all-borders">
-                    <h3 class="all-borders">
-                        Partners
-                    </h3>
-                </a>
-
-
-
-                <a href="#" class="all-borders">
-                    <h3 class="all-borders">
-                    Help center
-                    </h3>
-                </a>
-
-
+    <section class="sixth-section all-borders">
+        <div class="roadmap-general-container all-borders">
+            <div class="roadmap-benzswap all-borders">
+                <h3 class="benzswap-roadmap-heading all-borders">
+                    BenzSwap <span class="blue-text all-borders">Roadmap</span>
+                </h3>
             </div>
 
-
-            <div class="quick-link. l....,ms-details all-borders">
-
-                <a href="#" class="all-borders">
-                    <h3 class="all-borders">
-                        Quick Links
-                    </h3>
-                </a>
-
-                <a href="#" class="all-borders">
-                    <h3 class="all-borders">
-                        Support
-                    </h3>
-                </a>
-
-                <a href="#" class="all-borders">
-                    <h3 class="all-borders">
-                        Contact Us
-                    </h3>
-                </a>
-
-                <a href="#" class="all-borders">
-                    <h3 class="all-borders">
-                        Blog
-                    </h3>
-                </a>
-
+            <div class="benzSwap-roadmap-background-image all-borders">
+                <img src="./Assets/images/background-images/Roadmap-background-image.png" " alt="Road Map Background Image">
             </div>
+        </div>
 
-            <div class="newsletter-details all-borders">
+    </section>
 
-                <h3>Subscribe to our newsletter</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    <!-- <script type="text/javascript" src="./Assets/JS/benzSwap.js">
+        
+    </script> -->
+</main>
+
+</div>
+<footer class="all-footer all-borders">
+    <div class="all-footer-contents all-borders">
+
+
+        <div class="logo-and-newsletter-for-mobile all-borders">
+
+
+
+            <div class="footer-benzswap-logo all-borders">
+                <a href="#" class="all-borders"> 
+                <img src="./Assets/images/benzswap-logo/BENSWAP-LOGO-14-removebg-preview.png" alt="benzSwap official logo (footer)" class="all-borders"> &nbsp; 
+                <span class="benzSwap-logo-footer-text all-borders">
+                    BENZSWAP
+                </span>
+                </a>
+            </div>
+            <div class="newsletter-details all-borders" style="display: none;">
+
+                <p>subscribe to our newsletter</p>
                 <div class="newsletter-input-details">
-                    <input type="email" placeholder="Email Address" name="subscribe-email">
+                    <input type="email" placeholder="Email Address" name="subscribe-email"> &nbsp;
                     <button><span class="material-symbols-sharp">
                             arrow_forward
                         </span></button>
 
                 </div>
+                <div class="trade-crypto-social-media all-borders">
 
+                    <div class="tweeter-image all-borders"><a href="https://twitter.com/BenzSwap"><img src="./Assets/images/social-media/twitter-community.png" alt="twiter logo"></a>
+                    </div>
+                    <div class="telegram-image all-borders">
+                        <a href="https://t.me/BenzSwapOfficial"><img src="./Assets//images/social-media/telegram-community.png" alt="telegram logo"></a>
+
+                    </div>
+                    <div class="discord-image all-borders">
+                        <a href="https://discord.com/invite/fcKYu6XWth"><img src="./Assets/images/social-media/discord-community.png" alt="discord logo"></a>
+
+                    </div>
+
+
+                    <div class="linkedin-image all-borders">
+                        <a href="https://discord.com/invite/fcKYu6XWth"><img src="./Assets/images/social-media/linkedIn-new-logo2.png" alt="linkedin logo"></a>
+
+                    </div>
+
+                </div>
             </div>
+
 
         </div>
 
-        <!-- <center> -->
-
-    <!-- <div class="copyright-content all-borders">
-            &copy; 2022 BENZSWAP Inc. All rights reserved
-        </div> -->
-    <!-- </center> -->
-
-    <!-- <div class="mode-toggle-btn all-borders">
-            <button class="toggle all-borders">
-                
-            </button>
-        </div> -->
-
-    <!-- </footer> -->
 
 
+        <div class="company-details all-borders">
+            
+            <a href="#" class="all-borders">
+                <p class="all-borders">
+                    Company
+                </p>
+            </a>
 
-    <!-- <script type="text/javascript" src="./Assets/JS/benzSwap.js">
+            <a href="#" class="all-borders">
+                <p class="all-borders">
+                    About
+                </p>
+            </a>
 
-    </script> -->
-    </main>
+            <a href="#" class="all-borders">
+                <p class="all-borders">
+                    Privacy Policy
+                </p>
+            </a>
+
+            <a href="#" class="all-borders">
+                <p class="all-borders">Terms & Conditions</p>
+            </a>
+
+            <a href="#" class="all-borders">
+                <p class="all-borders">FAQ</p>
+            </a>
+        </div>
+
+
+        <div class="learn-more-details all-borders">
+
+            <a href="#" class="all-borders">
+                <p class="all-borders">
+                    Learn More<strong>.....</strong>
+                </p>
+            </a>
+
+
+
+            <a href="#" class="all-borders">
+                <p class="all-borders">
+                How it works
+                </p>
+            </a>
+
+
+
+            <a href="#" class="all-borders">
+                <p class="all-borders">
+                    Partners
+                </p>
+            </a>
+
+
+
+            <a href="#" class="all-borders">
+                <p class="all-borders">
+                Help center
+                </p>
+            </a>
+
+
+        </div>
+
+
+        <div class="quick-link. l....,ms-details all-borders">
+
+            <a href="#" class="all-borders">
+                <p class="all-borders">
+                    Quick Links
+                </p>
+            </a>
+
+            <a href="#" class="all-borders">
+                <p class="all-borders">
+                    Support
+                </p>
+            </a>
+
+            <a href="#" class="all-borders">
+                <p class="all-borders">
+                    Contact Us
+                </p>
+            </a>
+
+            <a href="#" class="all-borders">
+                <p class="all-borders">
+                    Blog
+                </p>
+            </a>
+
+        </div>
+
+        <div class="newsletter-details all-borders">
+
+            <p>Subscribe to our newsletter</p>
+            <div class="newsletter-input-details">
+                <input type="email" placeholder="Email Address" name="subscribe-email">
+                <button><span class="material-symbols-sharp">
+                        arrow_forward
+                    </span></button>
+
+            </div>
+
+            <div class="trade-crypto-social-media all-borders">
+
+                <div class="tweeter-image all-borders"><a href="https://twitter.com/BenzSwap"><img src="./Assets/images/social-media/twitter-community.png" alt="twiter logo"></a>
+                </div>
+                <div class="telegram-image all-borders">
+                    <a href="https://t.me/BenzSwapOfficial"><img src="./Assets//images/social-media/telegram-community.png" alt="telegram logo"></a>
+
+                </div>
+                <div class="discord-image all-borders">
+                    <a href="https://discord.com/invite/fcKYu6XWth"><img src="./Assets/images/social-media/discord-community.png" alt="discord logo"></a>
+
+                </div>
+
+
+                <div class="linkedin-image all-borders">
+                    <a href="https://discord.com/invite/fcKYu6XWth"><img src="./Assets/images/social-media/linkedIn-new-logo2.png" alt="linkedin logo"></a>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <center>
+
+<div class="copyright-content all-borders">
+        &copy; 2022 BENZSWAP Inc. All rights reserved
+    </div>
+ </center>
+
+<!-- <div class="mode-toggle-btn all-borders">
+        <button class="toggle all-borders">
+            
+        </button>
+    </div> -->
+
+</footer>
     <script type="text/javascript" src="./Assets/JS/benzSwapJs.js">
 
     </script>
