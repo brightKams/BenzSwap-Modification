@@ -60,78 +60,38 @@ for(let i = 0; i <= learnMoreBtn.length-1; i++) {
 
 
 
-console.log(dotsArray[1]);
-console.log(moreTextArray);
-console.log(btnArray);
-console.log(btnArray[2]);
+// console.log(dotsArray[1]);
+// console.log(moreTextArray);
+// console.log(btnArray);
+// console.log(btnArray[2]);
 
-// class LearnMore {
-//     constructor(dots, moreText, learnMoreBtn) {
-//         this.dots = dots;
-//         this.moreText = moreText;
-//         this.learnMoreBtn = learnMoreBtn;
-//         return;
-
-
-
-//         if (dots.style.display === "none") {
-//             dots.style.display = "inline";
-//             moreText.style.display = "none";
-//             learnMoreBtn.innerText = "Learn More.....";
-//         }
+// Beginning of Mobile Screen Display 
+generalContainer = document.querySelector("div.general-content.all-borders");
+menuIcon = document.querySelector("label.menu-icon");
+menuIcon2 = document.querySelector("label.menu-icon.menu-icon-2")
+main = document.querySelector("main");
+footer = document.querySelector("footer");
+console.log(generalContainer);
+console.log(menuIcon);
+console.log(menuIcon2);
+console.log(main);
+console.log(footer);
 
 
-//         else {
-//             dots.style.display = "none";
-//             moreText.style.display = "inline";
-//             learnMoreBtn.innerText = "Read less.....";
-//         }
-//     }
-// }
+menuIcon.addEventListener("click",   function () {
+  
+            main.style.display = "none";
+            footer.style.display = "none";
+            generalContainer.style.minHeight = "100vh"
+    }
+)
 
-// let learnMore = new LearnMore(dotsArray[1], moreTextArray[1], btnArray[1]);
+menuIcon2.addEventListener("click", () => {
+            main.style.display = "revert";
+            footer.style.display = "revert";
+    }
+)
 
-
-
-
-
-
-
-// btnArray.forEach(item => {
-//     console.log(item);
-// })
-// function learnMore() {
-
-//     moreText = moreText.forEach(eachMoreText => {
-//         // eachMoreText.style.display = "none";
-
-//     });
-
-//     learnMoreBtn = learnMoreBtn.forEach(eachLearnMoreText => {
-//         // eachLearnMoreText.innerText = "Read Less..."
-//     });
+// End of Mobile Screen display
 
 
-
-//     dots.forEach(eachdot => {
-//         if (eachdot.style.display === "none"){
-//             eachdot.style.display = "inline";
-//             moreText.eachMoreText.style.display ="none";
-//             learnMoreBtn.eachLearnMoreText.innerText = "Read More..."
-
-            
-            
-//             l
-//         }
-//         else
-    
-//         {
-//             eachdot.style.display = "none";
-//             moreText.eachMoreText.style.display = "inline";
-//             learnMoreBtn.eachLearnMoreText.innerText = "Read less....."
-    
-//         }
-
-//     })
-
-// }

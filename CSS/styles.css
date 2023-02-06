@@ -34,6 +34,7 @@
     outline: none;
     padding: 1% 10% 3%;
     position: relative;
+    min-height: 100vh;;
     background: #1A1C20;
     
 }
@@ -49,9 +50,9 @@
 
 /* Universal Stylings for all sections */
 section {
-    margin: 25px auto;
+    margin: 100px auto;
     width: 100%;
-    background: linear-gradient(to top, rgb(31, 31, 33) 0.14%, rgb(40, 41, 41) 99.87%);
+    /* background: linear-gradient(to top, rgb(31, 31, 33) 0.14%, rgb(40, 41, 41) 99.87%); */
 }
 
 
@@ -397,9 +398,9 @@ main {
 
 
 .first-section.all-borders {
-    margin:auto;
+    margin:50px auto 50px;
     background: transparent;
-    min-height: 48vh;
+    /* min-height: 48vh; */
     width: 100%;
     /* border: var(--default-border); */
     outline: none;
@@ -409,37 +410,26 @@ main {
 }
 
 
-.background-video-animation.all-borders {
+/* .background-video-animation.all-borders {
     min-height: 30vh;
     position: relative;
 
-}
+} */
 
 
 
-.background-video-animation.all-borders > video {
-    max-height: 55vh;
-    width: 80%;
-    margin: auto;
-    object-fit: cover;
-    /* background: #1A1C20; */
-    width: 100%;
-    position: absolute;
-    top: -30%;
-    /* left: 5%; */
 
-}
 
 .welcome-to-BenzSwap-general-container.all-borders {
-    position: absolute;
+    /* position: absolute;
     top: 15%;
-    left: 5%;
+    left: 5%; */
     /* z-index: 1200; */
     width: 90%;
     margin: auto;
     text-align: center;
     font-family: rubik;
-    max-height: fit-content;
+    /* max-height: fit-content; */
     color: #fff;
 }
 .welcome.all-borders {
@@ -507,10 +497,9 @@ main {
 
 section.second-section.all-borders {
    /* border: 5px solid #0193FA; */
-    /* min-height: 20vh;  */
     width: 100%;
     color: #fff; 
-    /* margin-top: 70px */
+    margin-top: 100px
 }
 
 .second-section.all-borders > .introducing-benzswap-general-container.all-borders {
@@ -1066,9 +1055,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
     
 
-    /* .first-section.all-borders {
-        min-height: 55vh;
-    } */
+   
 
     .welcome-to-BenzSwap-general-container.all-borders h1 {
         font-size: 2.8rem;
@@ -1090,19 +1077,11 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
 
 
-    /* Beginning of Second-Section */
-
-    /* section.second-section.all-borders { */
-        /* border: 5px solid #0193FA; */
-        /* min-height: 20vh;
-        width: 100%;
-        color: #fff;
-        margin-top: 70px; */
-    /* } */
+  
 
     section.second-section.all-borders {
         min-height: 10vh;
-        margin-top: -70%;
+        
     }
 
 
@@ -1113,7 +1092,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
     .second-section.all-borders .introducing-benzswap-protocol.all-borders {
         width: 80%;
-        /* margin: 20px auto 10px; */
+        
     }
 
 
@@ -1124,35 +1103,18 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
     /* End of Second-Section */
 
-    /* Beginning of fourth Section - Benz Token */
+    /* Beginning of fifth Section - Benz Token images for max screen 1200px  */
 
-    section.fourth-section.all-borders {
-       
-        margin-top: 60px;
-       
-    }
+   
 
-    /* End of fourth Section - Benz Token */
     
-    
-    /* Beginning of Fifth Section - Benz Token*/
-    
-    
-    section.fifth-section.all-borders {
-       
-        margin-top: 60px;
-       
-    }
 
     section.fifth-section > .benz-token-images-general-container.all-borders > div {
         width: 30%;
-        /* border: var(--default-border) #0193FA; */
-        /* margin: 0; */
-      
+             
     } 
 
     .benz-token-text.all-borders {
-        /* height: 0; */
         padding: 0;
         margin: 0;
     }
@@ -1160,7 +1122,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     
     section.fifth-section > .benz-token-images-general-container.all-borders {
         width: 90%;
-        /* margin-left: 10%; */
+       
     }
     
     
@@ -1171,19 +1133,20 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
         right: 5%;
         height: fit-content;
         padding: 5px;
-        /* border: var(--default-border) #0193FA; */
+        
     }
 
 
     
 
-    /* End of Fifth Section - Benz Token */
+    /* End of Fifth Section - Benz Token images for max screen 1200px */
+
 
     /* Beginning of Sixth Section - BenzSwap RoadMap */
 
     .sixth-section.all-borders {
         margin-top: 60px;
-        /* width: 100%; */
+        
     }
     
 
@@ -1197,18 +1160,10 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
         object-position: center;
                 
     }
-/* 
-    section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders img {
-        display: revert !important;
-        width: 100%;
-        height: 100%;
-
-    } */
-
-
 
 
     /* End of Sixth Section - Benz Token */
+    
 
     /* Beginning of Footer Contents for Max Screen 1200px */
 
@@ -1233,102 +1188,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     /* End of Footer Contents for Max Screen 1200px */
 }
 
-@media screen and (min-width:769px) and (max-width:1061px) {
 
-
-    nav > ul > .navigation-list-items.all-borders {
-        
-        margin-right: 70px;
-    }
-
-    /* Beginning of Expansion icons in the Navigation bar */
-    .navigation-list-items > li > a > span {
-        position: absolute;
-        top: -10%;
-        /* color: yellow; */
-    }
-
-    nav > ul > .navigation-list-items > li.product-menu > a > span.material-symbols-sharp {
-        right: -38%;
-        /* justify-content: center; */
-    }
-    li.governance-menu > a > span.material-symbols-sharp {
-        right: -27%;
-        /* justify-content: center; */
-    }
-
-    li.developers-menu > a > span.material-symbols-sharp, li.community-menu > a > span.material-symbols-sharp {
-        right: -28%;
-    }
-
-    /* End of Expansion icons in the Navigation bar */
-
-    nav .launch-app-container.all-borders a {
-        font-size: 0.8rem;
-    }
-
-    /* End of Header */
-
-
-    /* Beginning of third Section - Crypto Images */
-    /* .third-section.all-borders .general-crypto-images.all-borders > div > div p {
-        height: 150px;
-    } */
-
-
-    /* End of third Section -Crypto Images */
-
-
-    /* Beginning of Fifth Sectiion - Benz Token Images */
-
-    
-
-    section.fifth-section > .benz-token-images-general-container.all-borders > div {
-        width: 45%;
-        /* border: var(--default-border) #0193FA; */
-        /* padding: 30px 30px 0; */
-        margin: 30px auto;
-    }
-
-    section.fifth-section.all-borders .benzSwap-token-image-container.all-borders.mobile-view-takeout {
-
-        width: 100%;
-        margin: 10px   auto;
-       
-    }
-
-    /* End of Fifth-Section Benz Token Images */
-
-    
-
-    /* Beginning of Footer Section for Max Screen 1061px  */
-
-    .footer-benzswap-logo.all-borders {
-        position: relative;
-        left: -35px;
-        top: -5px;
-    }
-
-    .footer-benzswap-logo.all-borders > a span {
-            top: 12px;
-            font-size: 0.8rem;
-        
-    }
-    
-    .trade-crypto-social-media.all-borders {
-       width: fit-content;
-       /* margin-left: -10px; */
-
-    }
-
-    .trade-crypto-social-media.all-borders div {
-        height: 0;
-        /* margin: auto -5px 0 auto; */
-    }
-
-    /* End of Footer Section for Max Screen 1061px */
-
-}
 
 
 
@@ -1353,10 +1213,12 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
         align-items: flex-start;
     }
 
+    
+   
     .menu-icon:first-of-type {
         display: revert;
     }
-   .header.all-borders .menu-btn1:checked ~ .menu-icon:first-of-type{
+   .header.all-borders .menu-btn1:checked ~ .menu-icon:first-of-type {
         display: none;
     }
 
@@ -1375,10 +1237,10 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     
     /* Main Menu List for Navigations */
     nav > ul.menu.navigation-lists.all-borders {
-        height: 800px;
+        /* height: 30vh; */
         width: 100%;
         position: relative;
-        background-color: #000;
+        /* background-color: #000; */
     
     }
 
@@ -1453,10 +1315,10 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
 
     
-    .background-video-animation.all-borders {
+    /* .background-video-animation.all-borders {
         max-height: 25vh;
         position: relative;
-    }
+    } */
     .background-video-animation.all-borders > video {
         max-height: 55vh;
         width: 80%;
@@ -1674,339 +1536,153 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
 
 
-} 
+}
 
 
-@media screen and (min-width:571px) and (max-width:651px)   {
+@media screen and (max-width: 576px) {
     
-    
-    /* Beginning of First Section - Welcome to BenzSwap and Decentralized Exchenage */
+    section:nth-of-type(6) {
+        display: none;
+    }
+
+    /* || universal Stylings */
+
+    section {
+        margin: 50px auto;
+    }
+
+    /* End of Universal Stylings */
 
 
+    /* Beginning of First Section - Welcome to BenzSwap for Xs Screen */
     .first-section.all-borders {
-      
-        min-height: 38vh;
-   
-    }
-
-    /* End of First Section - Welcome to BenzSwap and Decentralized Exchange */
-
-
-    /* Beginning of Second Section - Introducing BenzSwap */
-
-    section.second-section.all-borders {
-       
-        margin-top: 55px;
-    }
-
-    .second-section.all-borders .introducing-benzswap.all-borders {
+        margin: auto;
         width: 100%;
-    }
+        
+}
 
-    /* Beginning of Sixth Section - Roadmap BenzSwap */
-
-    .sixth-section.all-borders .roadmap-benzswap.all-borders {
-        width: 100% !important;
-    }
-
-
-
-    /* Beginning of footer section for Max Screen 651px */
-
-    .footer-benzswap-logo.all-borders {
-        position: relative;
-        left: 0;
-        top: -5px;
-        width: 50%;
-    }
-   
-    .footer-benzswap-logo.all-borders > a span {
-        font-size: 0.8rem;
-    }
-
-    .newsletter-details.all-borders {
-        display: revert !important;
-        /* margin-left: 170px; */
-    }
-   
+.welcome-to-BenzSwap-general-container.all-borders {
+    width: 100%;
+}
     
+.welcome-to-BenzSwap-general-container.all-borders .nowrap {
+    white-space: nowrap;
+}
+    .welcome-to-BenzSwap-general-container.all-borders h1 {
+        font-size: 1.6rem;
+    }
 
-    .all-footer-contents.all-borders p {
+    .welcome-to-BenzSwap-general-container.all-borders .launch-app-container.all-borders {
+        /* border: var(--default-border); */
+        width: 100%;
         font-size: 0.8rem;
+        margin-top: 30px;
+        
     }
 
-
-    .logo-and-newsletter-for-mobile.all-borders{
-        display: flex;
-        width: 100% !important;
-        margin: 5% auto 5% !important;
+    .welcome-to-BenzSwap-general-container.all-borders .launch-app-container.all-borders  li {
+        width: 120px;
     }
 
-    .trade-crypto-social-media.all-borders {
-        margin: 20px 0 auto 6px;
-    }
+    /* End of First Section -Welcome to BenzSwap for Xsm Screen */
 
 
-    /* .footer-benzswap-logo.all-borders   {
-        margin-left: -30px;
-    } */
-
+    /* Beginning of Second Section - Introduction to BenzSwap for Xsm Screen */
     
-    .footer-benzswap-logo.all-borders > .benzSwap-logo-footer-text.all-borders {
-    /* display: inline-block; */
-    position: relative;
-    bottom: 95px;
-    left: -48%;
-}
-
-.all-footer-contents.all-borders > .newsletter-details.all-borders {
-    display: none !important;
-}
-
-
-.all-footer-contents.all-borders    > div:nth-child(2), .all-footer-contents.all-borders    > div:nth-child(3), .all-footer-contents.all-borders    > div:nth-child(4)   {
-    width: 25%;
-    margin: 1% auto 1% 5%;
-    /* margin: auto; */
-}
-
-/* End of Footer Section */
-}
-
-
-
-@media screen and (max-width:571px) {
-
-
-    /* Universal Styling for Max Screen  of 571px*/
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    /* Beginning of Second Section - BenzSwap Introduction */
-
-
-    .second-section.all-borders > .introducing-benzswap-general-container.all-borders {
-
-        margin-top: 0;
+    section.second-section.all-borders {
+        margin: 40px auto;
     }
 
     .second-section.all-borders .introducing-benzswap.all-borders {
         width: 100%;
         margin: auto;
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .introducing-benzswap.all-borders .nowrap {
+        white-space: nowrap;
+      
     }
 
     .second-section.all-borders .introducing-benzswap-protocol.all-borders {
         width: 100%;
     }
 
-
-    /* End of Second Section - BenzSwap Introduction */
-
-
-    /* Beginning of Third Section -  Crypto Images */
-
-    /* .third-section.all-borders {
-        border-radius: 5px;
-    } */
-
+    /* || End of Second Section - Introduction to BenzSwap for Xsm Screen */
+    
+    /* || Beginning of third Section - Crypto images for Xsm Screen */
+    
     .third-section.all-borders {
-        margin: 0 auto;
+        
+        border: none;
     }
-
+    .third-section.all-borders .general-crypto-images.all-borders {
+        margin-top: 0;
+    }
+    
     .third-section.all-borders .general-crypto-images.all-borders  > div {
-        
-        padding: 0;
-       
+        padding: 15px;
+        margin-top: 5px;
     }
-
-
-    /* End of Third Section - Crypto Images */
-
-
-    /* Beginning of Fourth Section for a Max Screen of 571px  */
-
-
-    section.fourth-section.all-borders {
-        
-        margin-top: 100px;
+    .third-section.all-borders .general-crypto-images.all-borders  > div > div {
+        border: var(--default-border) #0193FA;
+        box-shadow: 0px 0px 5px 1px #0193FA;
+        width: 100%;
+        padding: 7%;
     }
-
-
+    /* || End of third Section - Crypto images for Xsm Screen */
+    
+    /* || Beginning of fourth Section - Benz Token for Xsm Screen */
+    
+    .fourth-section.all-borders .benz-token.all-borders {
+        width: 100%;
+        margin: auto;
+        font-size: 1.8rem;
+    }
+    
+    .fourth-section.all-borders .benz-token.all-borders .nowrap {
+        white-space: nowrap;
+    }
+    
     .fourth-section.all-borders .benz-token-content.all-borders {
         width: 100%;
     }
-    /* Beginning of Fifth Section for Max Screen of 571px */
+
+    /* || End of fourth Section - Benz Token for Xsm Screen */
+    
+    /* || Beginning of fifth Section - Token Images for Xsm Screen */
 
     section.fifth-section.all-borders {
-          width: 100%;
-        padding: 10px;
-    }
-
-    
-    /* End of Fifth Section - Benz Token for Max Screen of 571px */
-    
-
-    /* Beginning of Sixth Section - Roadmap for Max Screen of 571px */
-
-    section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders {
-        min-height: 30vh;
-        margin: auto;
-    }
-
-    /* Beginning of Footer Section for Screens below 571Px */
-
-    .newsletter-details.all-borders p {
-        position: relative;
-        left: 8%;
-    }
-    .newsletter-details.all-borders {
-        display: block !important;
-        margin-left: 30%;
-    }
-
-    
-    
-    
-    .logo-and-newsletter-for-mobile.all-borders{
-        display: flex;
-        width: 100% !important;
-        margin: 5% auto 5% !important;
-    }
-    
-    
-    .footer-benzswap-logo.all-borders {
-        position: relative;
-        left: 2px;
-        top: -5px;
-    }
-    .footer-benzswap-logo.all-borders > .benzSwap-logo-footer-text.all-borders {
-        /* display: inline-block; */
-        position: relative;
-        bottom: 110px;
-        left: 42px;
-    }
-    
-    .all-footer-contents.all-borders > .newsletter-details.all-borders {
-        display: none !important;
-    }
-    
-    .newsletter-details.all-borders > .newsletter-input-details > input {
+        border:none;
+        min-height: fit-content;
         width: 100%;
-        padding: 0 0 0 10px;
-        height: 35px;
-        
+        /* color: #fff; */
+        margin-top: 40px;
+        padding: 0;
     }
-    .newsletter-details.all-borders > .newsletter-input-details > button {
-        width: 20%;
-        right: 5%;
-        top: 7px;
+    
+    section.fifth-section > .benz-token-images-general-container.all-borders {
+        padding: 0;
         
     }
     
-    .trade-crypto-social-media.all-borders {
-        margin: 11px 0 0;
-        position: relative;
-        left: 4%;
+    section.fifth-section > .benz-token-images-general-container.all-borders > div {
+        width: 100%;
+        margin: 15px  auto;
+        padding: 20px;
+        border: var(--default-border) #0193FA;
+        box-shadow: 0px 0px 5px 1px #0193FA;
+        border-radius: 5px;
     }
 
-/* .newsletter-details.all-borders > .newsletter-input-details > button {
-    width: 10%;
-    position: absolute;
-    top: 11px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    margin-right: 3px;
-} */
-
-.all-footer-contents.all-borders    > div:nth-child(2), .all-footer-contents.all-borders    > div:nth-child(3), .all-footer-contents.all-borders    > div:nth-child(4)   {
-width: 25%;
-
-
-}
-
-    /* End of Footer Section for Screens below 571Px */
 
 }
 
 
 
-@media screen and (max-width: 548px) {
-
-
-    /* Universal Styling for Max Screen  of 548px*/
-
-    h3 {
-        font-size: 1.5rem;
-    }
-    
-    .first-section.all-borders {
-        min-height: 45vh;
-    }
-
-    .background-video-animation.all-borders {
-        min-height: 48vh;
-        position: relative;
-    }
-
-
-    .background-video-animation.all-borders > video {
-        height: 60vh;
-        width: 80%;
-        margin: auto;
-        object-fit: cover;
-        background: #1A1C20;
-        width: 100%;
-        position: absolute;
-        top: -30%;
-        /* left: 5%; */
-    }
-
-
-    .welcome-to-BenzSwap-general-container.all-borders h1 {
-        font-size: 1.5rem;
-        font-weight: 700;
-        width: 100%;
-        /* line-height: 2rem; */
-    }
-
-    .welcome-to-BenzSwap-general-container.all-borders .launch-app-container.all-borders {
-        /* border: var(--default-border); */
-        width: 100%;
-        max-height: 70px;
-        margin: 15px auto auto;
-        justify-content: space-between;
-    }
-
-
-    .second-section.all-borders {
-        /* border: var(--default-border) #0193FA; */
-        height: 30vh !important; 
-        width: 100%;
-        /* color: green; 
-        z-index: 2000;  */
-        color: #fff; 
-        margin-top: -40px !important;
-    }
-
-    /* End of Section Two for Max Screen of 548px */
 
 
 
-    /* Beginnning of Third Section  */
-
-    .third-section.all-borders {
-        margin: -50px auto;
-
-
-    }
 
 
 
-    
-
-}
