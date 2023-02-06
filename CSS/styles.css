@@ -1651,7 +1651,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     /* || End of fourth Section - Benz Token for Xsm Screen */
     
     /* || Beginning of fifth Section - Token Images for Xsm Screen */
-
+    
     section.fifth-section.all-borders {
         border:none;
         min-height: fit-content;
@@ -1674,7 +1674,88 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
         box-shadow: 0px 0px 5px 1px #0193FA;
         border-radius: 5px;
     }
+    
+    /* || End of fifth Section - Token Images for Xsm Screen */
+    
+    
+    /* || Beginning of Footer Section for Xsm Screen */
 
+    .all-footer-contents.all-borders p {
+        font-size: 0.8rem;
+    }
+
+    footer .nowrap {
+        white-space: nowrap;
+    }
+
+    .newsletter-details.all-borders p {
+        position: relative;
+        left: 8%;
+    }
+    .newsletter-details.all-borders {
+        display: block !important;
+        margin-left: 20%;
+    }
+
+    
+    
+    
+    .logo-and-newsletter-for-mobile.all-borders{
+        display: flex;
+        width: 100% !important;
+        margin: 5% auto 5% -5% !important;
+    }
+    
+    
+    .footer-benzswap-logo.all-borders {
+        position: relative;
+        left: 2px;
+        top: -5px;
+    }
+    .footer-benzswap-logo.all-borders > .benzSwap-logo-footer-text.all-borders {
+        /* display: inline-block; */
+        position: relative;
+        bottom: 110px;
+        left: 42px;
+    }
+    
+    .all-footer-contents.all-borders > .newsletter-details.all-borders {
+        display: none !important;
+    }
+    
+    .newsletter-details.all-borders > .newsletter-input-details > input {
+        width: 100%;
+        padding: 0 0 0 10px;
+        height: 35px;
+        
+    }
+    .newsletter-details.all-borders > .newsletter-input-details > button {
+        width: 20%;
+        right: 5%;
+        top: 7px;
+        
+    }
+    
+    .trade-crypto-social-media.all-borders {
+        margin: 11px 0 0;
+        position: relative;
+        left: 4%;
+    }
+
+
+
+.all-footer-contents.all-borders    > div:nth-child(2), .all-footer-contents.all-borders    > div:nth-child(3), .all-footer-contents.all-borders    > div:nth-child(4)   {
+width: 25%;
+
+
+}
+    
+
+.copyright-content.all-borders {
+    width: 70%;
+    margin: auto;
+    font-size: 1.1rem;
+}
 
 }
 
