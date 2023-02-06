@@ -1680,6 +1680,11 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     
     /* || Beginning of Footer Section for Xsm Screen */
 
+
+    .all-footer.all-borders {
+        padding: 5%;
+        
+    }
     .all-footer-contents.all-borders p {
         font-size: 0.8rem;
     }
