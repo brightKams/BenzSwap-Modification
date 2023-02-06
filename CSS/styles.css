@@ -55,6 +55,10 @@ section {
     /* background: linear-gradient(to top, rgb(31, 31, 33) 0.14%, rgb(40, 41, 41) 99.87%); */
 }
 
+.third-section.all-borders:hover, section.fifth-section.all-borders:hover {
+    
+    border: 3px solid #0193FA;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--main-header-font);
@@ -836,11 +840,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
 }
 
-/* .footer-benzswap-logo.all-borders > a:hover { */
-    /* width: 100px; */
-    /* background-color: var(--btnBackgroundColor); */
-    /* border-radius: 10px; */
-/* } */
+
 
 .footer-benzswap-logo.all-borders >
 .benzSwap-logo-footer-text.all-borders  {
@@ -1003,6 +1003,12 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 /* MEDIA QUERIES FOR DIFFERENT SCREEN SIZES */
 
 @media screen  and (min-width:769px) and (max-width:1200px) {
+
+    /* || Universl Stylings  */
+
+    section.fifth-section.all-borders .nowrap {
+        white-space: nowrap;
+    }
     
     nav {
         font-size: 0.8rem;
@@ -1105,12 +1111,26 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
     /* Beginning of fifth Section - Benz Token images for max screen 1200px  */
 
-   
 
     
+    
+    section.fifth-section.all-borders {
+        border: var(--default-border) #0193FA;
+        min-height: 10vh;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        margin-top: 30px;
+        padding: 2%;
+        border-radius: 5px;
+    }
 
     section.fifth-section > .benz-token-images-general-container.all-borders > div {
-        width: 30%;
+        width: 45%;
+        margin: 5% auto;
+             
+    } 
+    section.fifth-section > .benz-token-images-general-container.all-borders > div:nth-child(2), section.fifth-section > .benz-token-images-general-container.all-borders > div:nth-child(4) {
+        margin-right: -5%;
              
     } 
 
@@ -1122,6 +1142,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     
     section.fifth-section > .benz-token-images-general-container.all-borders {
         width: 90%;
+        padding: 0;
        
     }
     
@@ -1196,10 +1217,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 @media screen and (max-width:768px) {
    /* || Universal Stylings */
 
-   .third-section.all-borders:hover, section.fifth-section.all-borders:hover {
-    
-    border: 3px solid #0193FA;
-}
+  
     
 
   
