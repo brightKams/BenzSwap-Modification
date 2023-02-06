@@ -1194,11 +1194,15 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
  /*     --- Media query for mobile screens below 768px --- */
 @media screen and (max-width:768px) {
-    /* body {
-    padding: 10px 70px 10px ;
+   /* || Universal Stylings */
+
+   .third-section.all-borders:hover, section.fifth-section.all-borders:hover {
+    
+    border: 3px solid #0193FA;
+}
     
 
-    } */
+  
     .header {
         height: 55px;
     }
@@ -1244,9 +1248,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     
     }
 
-    /* .launch-app-container.all-borders:first-of-type {
-        display: none;
-    } */
+ 
     /* Main menu Navigation List items */
 
     nav > ul > .navigation-list-items.all-borders li.product-menu {
@@ -1303,9 +1305,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
 
     /* Beginning of First Section */
-    /* p {
-        font-size: 1rem;
-    } */
+ 
 
     .first-section.all-borders {
     
@@ -1315,10 +1315,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
 
     
-    /* .background-video-animation.all-borders {
-        max-height: 25vh;
-        position: relative;
-    } */
+    
     .background-video-animation.all-borders > video {
         max-height: 55vh;
         width: 80%;
@@ -1432,16 +1429,23 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
     /* Beginning of Fifth Section - Benz Token */
 
+    section.fifth-section.all-borders {
+        
+        width: 100%;
+        padding: 0;
+        
+    }
+
     section.fifth-section > .benz-token-images-general-container.all-borders {
-        flex-direction: column;
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
     }
 
     section.fifth-section > .benz-token-images-general-container.all-borders > div {
-        width: 100%;
+        width: 40%;
         margin:20px  auto;
-        /* height: 180px;
-        border: var(--default-border) #0193FA;
-        margin: 17px; */
+        
     }
 
     section.fifth-section > .benz-token-images-general-container.all-borders > div h4 {
@@ -1479,6 +1483,16 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
     /* Beginning of Footer Contents for Max Screen 768px */
 
+    /* || Universal Stylyings */
+    .all-footer.all-borders {
+        padding: 5%;
+        
+    }
+
+    .nowrap {
+        white-space: nowrap;
+    }
+
     .footer-benzswap-logo.all-borders {
         position: relative;
         left: -35px;
@@ -1486,11 +1500,11 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     }
 
     .footer-benzswap-logo.all-borders > a span {
-    /* display: inline-block; */
+    
     position: absolute;
     left: 50px;
     top: 10px;
-    /* margin-top: 10px; */
+    
     }
     
     .all-footer-contents.all-borders p {
@@ -1510,11 +1524,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
         display: inline-block;
     }
     .footer-benzswap-logo.all-borders > a span {
-        /* display: inline-block; */
-        /* position: absolute;
-        left: 50px;
-        top: 10px; */
-        /* margin-top: 10px; */
+       
         font-size: 0.7rem;
     }
     
@@ -1551,6 +1561,10 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
         margin: 50px auto;
     }
 
+    .third-section.all-borders:hover, section.fifth-section.all-borders:hover {
+    
+        border: none;
+    }
     /* End of Universal Stylings */
 
 
@@ -1655,14 +1669,14 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     section.fifth-section.all-borders {
         border:none;
         min-height: fit-content;
-        width: 100%;
-        /* color: #fff; */
+        width: 95%;
         margin-top: 40px;
         padding: 0;
     }
     
     section.fifth-section > .benz-token-images-general-container.all-borders {
         padding: 0;
+        flex-direction: column;
         
     }
     
@@ -1708,7 +1722,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     .logo-and-newsletter-for-mobile.all-borders{
         display: flex;
         width: 100% !important;
-        margin: 5%  5% !important;
+        margin: 5% 5% !important;
     }
     
     
