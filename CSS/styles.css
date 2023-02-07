@@ -60,6 +60,9 @@ section {
     border: 3px solid #0193FA;
 }
 
+.nowrap {
+    white-space: nowrap;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--main-header-font);
 }
@@ -75,7 +78,7 @@ p {
     font-family: var(--main-content-font);
 }
 
-/* button annimations */
+/*Beginning of button annimations */
 .launch-app.all-borders {
     /* transition-duration: 2s;
     transition-property: transform; */
@@ -443,7 +446,7 @@ main {
     color: rgba(255, 255, 255, 0.80);
 }
 .welcome-to-BenzSwap-general-container.all-borders h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     width: 100%;
     /* line-height: 2rem; */
@@ -586,6 +589,11 @@ section.second-section.all-borders {
 
 }
 
+.learn-more-btn:hover { 
+    background-color:#0193FA;
+    /* background-color: linear-gradient(90.16deg, #064ee3 0.14%, #0193fa 99.87%); */
+}
+
 #moreText {
     display: none;
 }
@@ -633,7 +641,7 @@ section.fourth-section.all-borders {
         width: 80%;
         color: #fff; 
         margin-top: 30px;
-        padding: 5%;
+        padding: 3%;
         border-radius: 5px;
 
  }
@@ -650,18 +658,19 @@ section.fourth-section.all-borders {
  } 
 
  section.fifth-section > .benz-token-images-general-container.all-borders > div {
-    width: 30%;
-    /* height: 180px; */
-    /* border: var(--default-border) #0193FA; */
-    margin: 17px auto;
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start; */
+    width: 32%;
+    margin: 1% auto;
     
-
     
 } 
+ section.fifth-section > .benz-token-images-general-container.all-borders > div:nth-child(3) {
+    
+    margin-left: 4%;
+    
+    
+} 
+ 
+
 
  section.fifth-section.all-borders .benz-token-image.all-borders {
     width: 60px;

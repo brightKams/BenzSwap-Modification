@@ -15,16 +15,15 @@ for(let i = 0; i <= learnMoreBtn.length-1; i++) {
     learnMoreBtn[i].addEventListener("click", 
     function () {
 
-        if(dots[i].style.display ==="none") {
+        if(dots[i] >=4 && dots[i].style.display ==="none") {
             dots[i].style.display = "inline";
             moreText[i].style.display = "none";
             learnMoreBtn[i].innerText = "Learn More.....";
             learnMoreParagraph[i].style.height = "initial";
             learnMoreBtn[i].style.background = "initial"
-            // learnMoreBtn[i].innerText = "Read Less.....";
         }
 
-        else
+        else if (dots[i] >=4 && dots[i].style.display !=="none")
 
         {
             dots[i].style.display = "none";
@@ -38,6 +37,15 @@ for(let i = 0; i <= learnMoreBtn.length-1; i++) {
         
     }
     )
+
+
+
+
+
+
+
+
+
 
     // learnMoreBtn[i].addEventListener("mouseover", 
     // () => {
