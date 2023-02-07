@@ -905,6 +905,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     height: 30px;
     border-radius: 20px;
     padding: 20px;
+    font-size: 0.8rem;
 }
 
 .newsletter-details.all-borders > .newsletter-input-details > input:focus   {
@@ -1169,6 +1170,12 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
         height: fit-content;
         padding: 5px;
         
+    }
+
+
+    section.fifth-section > .benz-token-images-general-container.all-borders > div h4 {
+        
+        font-size: 1rem;
     }
 
 
