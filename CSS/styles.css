@@ -659,6 +659,7 @@ section.fourth-section.all-borders {
         padding: 15px 15px 0;
         align-items: center;
         margin: auto;
+        margin-left: 5%;
         /* justify-content: center; */
  } 
 
@@ -736,7 +737,7 @@ section.fifth-section.all-borders .benzSwap-token-image-container.all-borders .b
 
 .sixth-section.all-borders .roadmap-benzswap.all-borders {
     width: 100%;
-    margin: auto;
+    margin: 25px auto;
     font-size: 2rem;
 }
 
@@ -1175,7 +1176,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
     section.fifth-section > .benz-token-images-general-container.all-borders > div h4 {
         
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
 
@@ -1591,10 +1592,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
 @media screen and (max-width: 576px) {
     
-    section:nth-of-type(6) {
-        display: none;
-    }
-
+ 
     /* || universal Stylings */
 
     section {
@@ -1732,6 +1730,9 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     /* || End of fifth Section - Token Images for Xsm Screen */
     
     
+
+
+
     /* || Beginning of Footer Section for Xsm Screen */
 
 
