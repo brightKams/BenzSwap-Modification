@@ -355,6 +355,11 @@ ul a {
     align-items: center;
 
 }
+.launch-app.all-borders label:hover, .first-section.all-borders .launch-app-container.all-borders > li:nth-child(2):hover {
+    background: linear-gradient(90.16deg, rgb(6, 78, 227) 0.14%,
+     rgb(1, 147, 250) 99.87%);
+
+}
 .launchApp.all-borders {
     border-radius: var(--btn-border-radius);
     /* border: 1px solid; */
@@ -1046,15 +1051,15 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
         /* color: yellow; */
     }
     nav > ul > .navigation-list-items > li.product-menu > a > span.material-symbols-sharp {
-        right: -20%;
+        right: -25%;
     }
 
     li.governance-menu > a > span.material-symbols-sharp {
-        right: -15px;
+        right: -20px;
     }
 
     li.developers-menu > a > span.material-symbols-sharp, li.community-menu > a > span.material-symbols-sharp {
-        right: -10px;
+        right: -18px;
     }
 
     /* End of Expansion Icons in the Nav Bar */
