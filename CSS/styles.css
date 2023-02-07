@@ -1715,9 +1715,12 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     section.fifth-section > .benz-token-images-general-container.all-borders {
         padding: 0;
         flex-direction: column;
-        
+        margin-left: 0;
     }
     
+    section.fifth-section > .benz-token-images-general-container.all-borders > div:nth-child(3) {
+        margin-left: 0;
+    }
     section.fifth-section > .benz-token-images-general-container.all-borders > div {
         width: 100%;
         margin: 15px  auto;
