@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Karla:wght@700&family=Mulish:ital,wght@0,400;0,600;1,500&family=Open+Sans&family=Poppins:wght@500&display=swap');
+
+/* ||RESET */
 *   {
     padding: 0;
     margin: 0;
@@ -6,17 +9,30 @@
 
 
 :root {
-    --default-border: 1px solid;
-    --main-background: #000;
-    /* --main-pink: #db677a; */
-    --main-header-font: 'Rubik', sans-serif;
-    --main-content-font: 'Mulish', sans-serif;
-    /* --btnBackgroundColor: #F35F9B; */
-    --btn-border-radius: 20px;
-    --main-content-font-family: 'Mulish', sans-serif;
+/* || COLORS */
     --dark: #000;
     --light-color: #fff;
     --avatarDetailsColor: #000;
+    --main-background: #000;
+    /* --btnBackgroundColor: #F35F9B; */
+
+
+/* || BORDERS & BORDER-RADIUS' */
+    --default-border: 1px solid;
+    --btn-border-radius:86px;
+    --sections-border-Radius: 10px;
+    
+    /* || FONTS */
+    --main-header-font: 'Rubik', sans-serif;
+    --main-content-font: 'Mulish', sans-serif;
+    --main-content-font-family: 'Mulish', sans-serif;
+    --header-Font-Size: 20px;
+    --header-btn-font: 'Poppins', sans-serif; 
+    --fontWeight-semiBold: 600;
+    --fontWeight-regular: 400;
+    --fontWeight-bold: 700;
+    --fontWeight-medium: 500;
+
 }
 /* body {
     border: var(--default-border);
@@ -52,6 +68,7 @@
 section {
     margin: 100px auto;
     width: 100%;
+    border-radius: var(--sections-border-Radius);
     /* background: linear-gradient(to top, rgb(31, 31, 33) 0.14%, rgb(40, 41, 41) 99.87%); */
 }
 
@@ -59,7 +76,10 @@ section {
     
     border: 3px solid #0193FA;
 }
+/* || End of Universal Stylings for all sections */
 
+
+/* || UTILITY STYLINGS */
 .nowrap {
     white-space: nowrap;
 }
@@ -77,6 +97,7 @@ h4 {
 p {
     font-family: var(--main-content-font);
 }
+
 
 /*Beginning of button annimations */
 .launch-app.all-borders {
@@ -142,19 +163,21 @@ section.fifth-section.all-borders .benz-token-image.all-borders > img:hover {
     /* display: flex; */
     /* align-items: center; */
 }
-.logoImage.all-borders img {
-    max-width: 100%;
-
-}
+/* .logoImage.all-borders img {
+    max-width: auto;
+    
+} */
 
 .logo > img {
     width: 100%;
     height: 100%;
+    display: block;
 }
 
 
 nav {
     /* border: var(--default-border); */
+    font-size: var(--header-Font-Size);
     width: 75%;
     display: flex;
     justify-content: space-between;
@@ -301,18 +324,16 @@ nav > ul > .navigation-list-items.all-borders  > li:hover > ul.sub-menu.all-bord
     /* color: yellow; */
 }
 nav > ul > .navigation-list-items > li.product-menu > a > span.material-symbols-sharp {
-    right: 0;
-    /* display: flex;
-    align-items: center; */
-    /* justify-content: center; */
+    right: -25%;
+   
 }
 
 li.governance-menu > a > span.material-symbols-sharp {
-    right: 0;
+    right: -18%;
 }
 
 li.developers-menu > a > span.material-symbols-sharp, li.community-menu > a > span.material-symbols-sharp {
-    right: 0;
+    right: -17%;
 }
 
 li.blog-menu > a > span.material-symbols-sharp {
@@ -329,9 +350,9 @@ nav > ul > .navigation-list-items > li > a > label {
 
 nav > ul > .navigation-list-items > li > a, nav > ul > .navigation-list-items > li > a > label,.launch-app-container.all-borders a, .launch-app-container > li > label {
     
-    display: flex;
-    height: 100%;
-    width: 100%;
+    /* display: flex; */
+    /* height: 100%;
+    width: 100%; */
     text-decoration: none;
     color: #fff;
 }
@@ -349,12 +370,14 @@ ul a {
 }
 .launch-app.all-borders {
     /* border-radius: var(--btn-border-radius); */
-    /* border: 1px solid; */
-    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 130px;
 
 }
+
+
 .launch-app.all-borders label:hover, .first-section.all-borders .launch-app-container.all-borders > li:nth-child(2):hover {
     background: linear-gradient(90.16deg, rgb(6, 78, 227) 0.14%,
      rgb(1, 147, 250) 99.87%);
@@ -370,20 +393,28 @@ ul a {
 }
 
 .header .launchApp.all-borders {
-    border: 2px solid #0193FA;
+    outline: 2px solid #0193FA;
     background-color: transparent;
     padding: 10px;
+    width: 204.5px;
+    height: 69.2px;
+    font: var(--header-Font-Size) var(--header-btn-font);
+    font-weight: var(--fontWeight-semiBold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .launch-app-container.all-borders a {
-    /* display: flex; */
+    display: flex;
     padding: 3px;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    width: 100%;
+    /* width: 100%; */
     font-family: poppins;
     font-size: 1rem;
 }
+
 
 
 /* End of header section */
@@ -437,30 +468,40 @@ main {
     top: 15%;
     left: 5%; */
     /* z-index: 1200; */
-    width: 90%;
-    margin: auto;
+    /* width: 90%; */
+    margin: 80px auto auto;
     text-align: center;
-    font-family: rubik;
+    font-family: var(--main-header-font);
     /* max-height: fit-content; */
-    color: #fff;
+    color: var(--light-color);
 }
 .welcome.all-borders {
-    font-size: 1rem;
+    font-size:calc(1rem + 0.75rem   );
     font-family: var(--main-header-font);
-    font-weight: 400;
+    font-weight: var(--fontWeight-regular);
     color: rgba(255, 255, 255, 0.80);
 }
 .welcome-to-BenzSwap-general-container.all-borders h1 {
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: clamp(3rem, 5vw, 5.375rem);
+    font-weight: var(--fontWeight-bold);
     width: 100%;
     /* line-height: 2rem; */
 }
 
-.seamless-exchange.all-borders {
-    width: 40%;
+.welcome-to-BenzSwap-exchange.all-borders {
+    /* width: 80%; */
     margin: auto;
-    /* font-size: 0.8rem; */
+}
+
+.seamless-Exchange.all-borders {
+    margin-top: 32px;
+}
+.seamless-exchange.all-borders {
+    width: 70%;
+    margin: auto;
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    font-weight: var(--fontWeight-semiBold);
+    font-family: var(--main-content-font-family);
 }
 
 
@@ -472,7 +513,7 @@ main {
     width: 35%;
     /* height: 70px; */
     margin: 30px auto 5px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 
@@ -482,16 +523,17 @@ main {
 .first-section.all-borders .launch-app.all-borders {
     border-radius: var(--btn-border-radius);
     border: var(--default-border) ;
-    width: 120px;
-    display: flex;
-    align-items: center;
+    width: 150px;
+    height: 70px;
     border: 2px solid;
+    margin-left: 45px;
 }
 
 
 .first-section.all-borders .launch-app-container.all-borders > li:first-child {
     background: linear-gradient(90.16deg, #064EE3 0.14%, #0193FA 99.87%);
     border:var(--default-border) transparent;
+    margin-left: 0;
    
 }
 
@@ -519,15 +561,18 @@ section.second-section.all-borders {
 }
 
 .second-section.all-borders .introducing-benzswap.all-borders {
-    width: 50%;
+    width: 70%;
     margin: auto;
-    font-size: 2rem;
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+    font-weight: var(--fontWeight-bold);
 }
 
 .second-section.all-borders .introducing-benzswap-protocol.all-borders {
 
-    width: 60%;
-    margin: 20px auto 10px;
+    width: 70%;
+    margin: clamp(34px, 5vw, 64px) auto 10px;
+    font-size: clamp(0.8rem, 5vw, 1.2rem);
+    font-weight: var(--fontWeight-semiBold);
     
 }
 
@@ -535,8 +580,8 @@ section.second-section.all-borders {
 
 
 .third-section.all-borders {
-    border-radius: 5px;
     border: var(--default-border) #0193FA;
+    margin-top: 76px;
 }
 /* .third-section.all-borders .general-crypto-images.all-borders  > div {
     display: flex;
@@ -555,13 +600,14 @@ section.second-section.all-borders {
 
 .third-section.all-borders .general-crypto-images.all-borders  > div img {
     /* border: var(--default-border) #0193FA; */
-    height: 60px;
-    width: 60px;
+    
+    width: clamp(60px, 5vw, 95px);
+    height: clamp(60px, 5vw, 95px);
+    display: block;
     border-radius: 50%;
+    display: block;
     padding: 10px;
-    /* background-color: #0193FA; */
-    /* background: #1E1D2F; */
-    background: #D4D4D445;
+    background: #d4d4d445;
     margin-bottom: 5px;
     transition: transform 10s;
 
@@ -573,23 +619,33 @@ section.second-section.all-borders {
     margin: 10px auto;
 }
 
-/* .third-section.all-borders .general-crypto-images.all-borders  > div > div p { */
-    /* border: var(--default-border) #0193FA; */
-    /* height: 100px;
+.third-section.all-borders .general-crypto-images.all-borders  > div h4 {
+    font-size: 1.75rem;
+    font-weight: var(--fontWeight-medium);
+    margin-bottom: 10px;
+    
    
-} */
+}
+.third-section.all-borders .general-crypto-images.all-borders  p {
+    font-size: clamp(0.8rem, 5vw, 1rem);
+    font-weight: var(--fontWeight-regular);
+    
+   
+}
 
 .learn-more-btn {
-    font-family: var(--main-content-font-family);
-    height: 45px;
+    height: 75px;
     padding: 15px;
-    margin: 5px 0;
+    font-family: var(--header-btn-font);
+    font-weight: var(--fontWeight-semiBold);
+    font-size: 1.25rem;
+    margin: 25px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: transparent;
     color: var(--light-color);
-    border-radius: 5px ;
+    border-radius: var(--sections-border-Radius) ;
     border: var(--default-border) #0193FA ;
 
 }
@@ -615,7 +671,7 @@ section.fourth-section.all-borders {
      /* min-height: 20vh;  */
      width: 100%;
      color: #fff; 
-     margin-top: 30px
+     margin-top: clamp(30px, 5vw, 150px)
  }
  
  .fourth-section.all-borders > .benz-token-general-container.all-borders {
@@ -623,15 +679,16 @@ section.fourth-section.all-borders {
  }
  
  .fourth-section.all-borders .benz-token.all-borders {
-     width: 50%;
+     width: clamp(50%, 5vw, 70%);
      margin: auto;
-     font-size: 2rem;
+     font-size: clamp(1.75rem, 5vw, 2.5rem);
  }
  
  .fourth-section.all-borders .benz-token-content.all-borders {
  
-     width: 60%;
-     margin: 20px auto 10px;
+     width: 70%;
+     margin: 50px auto 10px;
+     font-size: clamp(0.8rem, 3vw, 1.2rem);
      
  }
 
@@ -642,12 +699,12 @@ section.fourth-section.all-borders {
 
  section.fifth-section.all-borders {
         border: var(--default-border) #0193FA;
-        min-height: 10vh; 
-        width: 80%;
+        height: fit-content; 
+        width: 95%;
         color: #fff; 
-        margin-top: 30px;
+        margin-top: clamp(30px, 5vw, 98px);
         padding: 3%;
-        border-radius: 5px;
+        
 
  }
 
@@ -679,42 +736,53 @@ section.fourth-section.all-borders {
 
 
  section.fifth-section.all-borders .benz-token-image.all-borders {
-    width: 60px;
-    height: 60px;
+    width: clamp(60px, 5vw, 95px);
+    height: clamp(60px, 5vw, 95px);
     border-radius: 50%;
     /* border: var(--default-border) #0193FA; */
     background: #D4D4D445;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 5px;
 }
 
 section.fifth-section.all-borders .benz-token-image.all-borders > img {
     width: 100%;
-    height: 100%;
+    height: auto;
+    display: block;
     transition: transform 8s;
     
 }
+section.fifth-section.all-borders .nowrap {
+    white-space: normal;
+}
 
+
+section.fifth-section.all-borders  h4 {
+    font-size: clamp(1.2rem, 5vw, 1.75rem);
+    font-weight: var(--fontWeight-medium);
+    margin: 10px auto;
+}
 section.fifth-section.all-borders .benzSwap-token-image-container.all-borders {
     width: 67%;
     margin: auto;
     position: relative;
-    right: 5%;
+    right: 15%;
     height: fit-content;
     padding: 5px;
     /* border: var(--default-border) #0193FA; */
 }
 
 section.fifth-section.all-borders .benzSwap-token-image-container.all-borders .benzSwap-token-image.all-borders {
-    width: 80%;
+    width: 100%;
     /* border: var(--default-border) #0193FA; */
     margin: auto;
 
 }
 
 section.fifth-section.all-borders .benzSwap-token-image-container.all-borders .benzSwap-token-image.all-borders > img {
-    width: 100%;
-    height: 100%;
+    width: 800px;
+    height: 400px;
+    display: block;
     /* border: var(--default-border) #0193FA; */
 
 }
@@ -738,7 +806,7 @@ section.fifth-section.all-borders .benzSwap-token-image-container.all-borders .b
 .sixth-section.all-borders .roadmap-benzswap.all-borders {
     width: 100%;
     margin: 25px auto;
-    font-size: 2rem;
+    font-size: clamp(1.75rem, 5vw, 3rem);
 }
 
 section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders {
@@ -1025,6 +1093,18 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     section.fifth-section.all-borders .nowrap {
         white-space: nowrap;
     }
+
+
+    /* .logo {
+        width: 100%;
+        max-height: auto;
+        padding: 5px;
+    } */
+    .logo img {
+        width: 100%;
+        max-height: 40px;
+        padding: 5px;
+    }
     
     nav {
         font-size: 0.8rem;
@@ -1037,7 +1117,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
         /* width: 35%; */
         /* width: 100%; */
         padding-left: 0;
-        margin-right: 15px;
+        margin-right: 25px;
     }
 
     nav > ul > .navigation-list-items.all-borders {
@@ -1048,20 +1128,26 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
     /* Beginning of Expansion Icons in the Nav bar */
 
+    
     .navigation-list-items > li > a > span {
-        top: 1%;
+        top: 0;
+        font-size: min(1.2rem, 5vw);
         /* color: yellow; */
     }
+    
+    
+
+
     nav > ul > .navigation-list-items > li.product-menu > a > span.material-symbols-sharp {
         right: -25%;
     }
 
     li.governance-menu > a > span.material-symbols-sharp {
-        right: -20px;
+        right: -22%;
     }
 
     li.developers-menu > a > span.material-symbols-sharp, li.community-menu > a > span.material-symbols-sharp {
-        right: -18px;
+        right: -25%;
     }
 
     /* End of Expansion Icons in the Nav Bar */
@@ -1069,8 +1155,15 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     
 
      .launch-app-container.all-borders {
-        width: fit-content;
+        width: 140px;
         
+    }
+
+    .header .launchApp.all-borders {
+        height: 50px;
+        width: 100%;
+        font: clac(var(--header-Font-Size) - 0.5rem) var(--header-btn-font);
+        font-weight: var(--fontWeight-semiBold);
     }
 
     /* Beginning of First section */
@@ -1080,19 +1173,19 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
    
 
     .welcome-to-BenzSwap-general-container.all-borders h1 {
-        font-size: 2.8rem;
+        font-size: 3rem;
         
     }
 
     .seamless-exchange.all-borders {
-        width: 55%;
+        width: 80%;
        
     }
 
     .welcome-to-BenzSwap-general-container.all-borders .launch-app-container.all-borders {
         
-        width: 45%;
-        margin: 25px auto;
+        width: 60%;
+        margin: 67px auto auto;
         
     }
     /* End of First Section */
@@ -1108,22 +1201,44 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
 
     .second-section.all-borders .introducing-benzswap.all-borders {
-        width: 75%;
-        
-    }
-
-    .second-section.all-borders .introducing-benzswap-protocol.all-borders {
-        width: 80%;
-        
-    }
-
-
-    .second-section.all-borders .introducing-benzswap-protocol.all-borders {
-        width: 65%;
+        width: 100%;
        
+        
     }
+
+    .second-section.all-borders .introducing-benzswap-protocol.all-borders {
+        width: 90%;
+        
+    }
+
+
+  
 
     /* End of Second-Section */
+
+    /* Beginning of third Section - General Crypto images for max screen 1200px  */
+    
+    .third-section.all-borders .general-crypto-images.all-borders  > div img {
+        /* border: var(--default-border) #0193FA; */
+        height: 110px;
+        width: 110px;
+        display: block;
+        border-radius: 50%;
+        display: block;
+        padding: 10px;
+        background: #d4d4d445;
+        margin-bottom: 5px;
+        transition: transform 10s;
+    }
+    
+    /* End of third Section - General Crypto images for max screen 1200px  */
+    
+    
+    /* Beginning of Fourth Section - Benz Token for max screen 1200px  */
+
+    .benz-token-text.all-borders {
+        font-weight: var(--fontWeight-semiBold);
+    }
 
     /* Beginning of fifth Section - Benz Token images for max screen 1200px  */
 
@@ -1164,10 +1279,10 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     
     
     section.fifth-section.all-borders .benzSwap-token-image-container.all-borders {
-        width: 67%;
+        width:clamp(80%, 5vw, 100%);
         margin: auto;
         position: relative;
-        right: 5%;
+        right: max(25%, 5vw);
         height: fit-content;
         padding: 5px;
         
@@ -1380,7 +1495,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     }
    
     .welcome-to-BenzSwap-general-container.all-borders h1 {
-        font-size: 2rem;
+        font-size: 2.4rem;
         
     }
     
@@ -1393,7 +1508,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
         /* border: var(--default-border); */
         width: 65%;
         max-height: 70px;
-        margin: 5px auto;
+        margin: 67px auto auto;
         justify-content: space-between;
     }
 
@@ -1458,14 +1573,8 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     }
 
 
-    .fourth-section.all-borders .benz-token-content.all-borders {
- 
-        width: 90%;
-        
-        
-    }
-
     /* End of Fourth Section - Benz Token */
+
 
     /* Beginning of Fifth Section - Benz Token */
 
@@ -1595,6 +1704,10 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
  
     /* || universal Stylings */
 
+    main {
+        margin-top: -50px;
+    }
+
     section {
         margin: 50px auto;
     }
@@ -1603,12 +1716,53 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     
         border: none;
     }
+
+    .learn-more-btn {
+        height: auto;
+        font-size: 1rem;
+        
+    }
     /* End of Universal Stylings */
 
+    /* || Navigation Bar - Logo */
 
+    .logo {
+        width: fit-content  ;
+        max-height: auto;
+        padding: 0;
+        
+    }
+
+    .header .logo img  {
+        width: 150px;
+        height: 45px;
+    }
+
+    nav {
+        top: 70px;
+    }
+
+
+    .header .launch-app-container.all-borders {
+        width: 200px;
+        height: 50px;
+        top: 175px;
+        left: -8%;
+        
+       
+    }
+    
+    .header .launchApp.all-borders {
+        
+        
+        width: 130.5px;
+        height: 39.2px;
+        font: calc(var(--header-Font-Size) - 4px) var(--header-btn-font);
+        
+    }
     /* Beginning of First Section - Welcome to BenzSwap for Xs Screen */
     .first-section.all-borders {
-        margin: auto;
+        /* margin: auto; */
         width: 100%;
         
 }
@@ -1624,11 +1778,16 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
         font-size: 1.6rem;
     }
 
+    .seamless-exchange.all-borders {
+        width: 100%;
+    }
+
     .welcome-to-BenzSwap-general-container.all-borders .launch-app-container.all-borders {
         /* border: var(--default-border); */
-        width: 100%;
+        width: 90%;
         font-size: 0.8rem;
         margin-top: 30px;
+       
         
     }
 
@@ -1636,6 +1795,17 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
         width: 120px;
     }
 
+    .first-section.all-borders .launch-app.all-borders {
+        height: 60px;
+        margin-left: 0;
+        
+    }
+
+   .launchApp.all-borders {
+            padding: 0;
+            font-size: 0.9rem;
+        
+    }
     /* End of First Section -Welcome to BenzSwap for Xsm Screen */
 
 
@@ -1648,7 +1818,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     .second-section.all-borders .introducing-benzswap.all-borders {
         width: 100%;
         margin: auto;
-        font-size: 1.5rem;
+        font-size: clamp(1.4rem, 5vw, 1.5rem);
     }
 
     .introducing-benzswap.all-borders .nowrap {
@@ -1657,7 +1827,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     }
 
     .second-section.all-borders .introducing-benzswap-protocol.all-borders {
-        width: 100%;
+        width:  95%;
     }
 
     /* || End of Second Section - Introduction to BenzSwap for Xsm Screen */
@@ -1665,8 +1835,8 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     /* || Beginning of third Section - Crypto images for Xsm Screen */
     
     .third-section.all-borders {
-        
         border: none;
+        margin-top: 40px;
     }
     .third-section.all-borders .general-crypto-images.all-borders {
         margin-top: 0;
@@ -1674,13 +1844,28 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     
     .third-section.all-borders .general-crypto-images.all-borders  > div {
         padding: 15px;
-        margin-top: 5px;
+        margin-top: -30px;
     }
     .third-section.all-borders .general-crypto-images.all-borders  > div > div {
         border: var(--default-border) #0193FA;
         box-shadow: 0px 0px 5px 1px #0193FA;
         width: 100%;
         padding: 7%;
+        
+    }
+
+    
+
+    .third-section.all-borders .general-crypto-images.all-borders  > div img {
+        height: 60px;
+        width: 60px;
+        
+    }
+
+    .third-section.all-borders .general-crypto-images.all-borders  > div h4 {
+        font-size: 1.5rem;
+       
+        
     }
     /* || End of third Section - Crypto images for Xsm Screen */
     

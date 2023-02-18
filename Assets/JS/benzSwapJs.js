@@ -38,6 +38,18 @@ for(let i = 0; i <= learnMoreBtn.length-1; i++) {
     }
     )
 
+    // COPYRIGHT YEAR UPDATE
+
+    const year = document.querySelector("#yearUpdate");
+    const yearUpdate = () => {
+        thisYear = new Date().getFullYear();
+        year.setAttribute("copyrightDateUpdate", thisYear);
+        return    year.innerText  = thisYear;
+        console.log(thisYear);
+    };
+    yearUpdate();
+
+
 
 
 
