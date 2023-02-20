@@ -7,7 +7,11 @@
     box-sizing: border-box;
 }
 
+html {
+    background: #1A1C20;
+   
 
+}
 :root {
 /* || COLORS */
     --dark: #000;
@@ -48,10 +52,14 @@
 .general-content.all-borders {
     border: none;
     outline: none;
-    padding: 1% 10% 3%;
+    /* padding: 1% 10% 3%; */
     position: relative;
     min-height: 100vh;;
-    background: #1A1C20;
+    /* background: #1A1C20; */
+
+
+    background-image: radial-gradient(circle at top center, rgba(78, 160, 185, 0.8), #1a1c20 10% )
+    ;
     
 }
 
@@ -67,7 +75,7 @@
 /* Universal Stylings for all sections */
 section {
     margin: 100px auto;
-    width: 100%;
+    width: 75%;
     border-radius: var(--sections-border-Radius);
     /* background: linear-gradient(to top, rgb(31, 31, 33) 0.14%, rgb(40, 41, 41) 99.87%); */
 }
@@ -126,7 +134,7 @@ section.fifth-section.all-borders .benz-token-image.all-borders > img:hover {
 /* End of universal stylings */
 
 .header {
-    width: 100%;
+    width: 75%;
     margin: auto;
     height: 80px;
     position: relative;
@@ -136,6 +144,8 @@ section.fifth-section.all-borders .benz-token-image.all-borders > img:hover {
     padding: 5px 0;
     /* color: #fff; */
     font-family: var(--main-header-font);
+
+    
 
 }
 
@@ -403,6 +413,8 @@ ul a {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    
 }
 .launch-app-container.all-borders a {
     display: flex;
@@ -448,6 +460,12 @@ main {
     /* border: var(--default-border); */
     outline: none;
     position: relative;
+    background-image: radial-gradient(circle at center, rgba(78, 160, 185, 0.6), #1a1c20 65% ), radial-gradient(circle at left center, rgba(60, 198, 236, 0.6), #1a1c20 70% ),
+    radial-gradient(circle at left center, rgba(60, 198, 236, 0.6), #1a1c20 70% )
+    
+    ;
+    /* background-position: top;
+    background-size: cover  ; */
    
 
 }
@@ -571,7 +589,7 @@ section.second-section.all-borders {
 
     width: 70%;
     margin: clamp(34px, 5vw, 64px) auto 10px;
-    font-size: clamp(0.8rem, 5vw, 1.2rem);
+    font-size: clamp(0.8rem, 5vw, 1rem);
     font-weight: var(--fontWeight-semiBold);
     
 }
@@ -581,6 +599,8 @@ section.second-section.all-borders {
 
 .third-section.all-borders {
     border: var(--default-border) #0193FA;
+    background-image: radial-gradient(circle at center, rgba(39, 106, 125, 0.8), #1a1c20 60% ), radial-gradient(circle at center right, rgba(39, 106, 125, 0.8), #1a1c20 60%)
+    ;
     margin-top: 76px;
 }
 /* .third-section.all-borders .general-crypto-images.all-borders  > div {
@@ -620,12 +640,17 @@ section.second-section.all-borders {
 }
 
 .third-section.all-borders .general-crypto-images.all-borders  > div h4 {
-    font-size: 1.75rem;
+    
+    font-size: clamp(1.2rem, 3vw, 1.75rem);
+    /* font-size: 1.75rem; */
     font-weight: var(--fontWeight-medium);
     margin-bottom: 10px;
     
    
 }
+
+
+
 .third-section.all-borders .general-crypto-images.all-borders  p {
     font-size: clamp(0.8rem, 5vw, 1rem);
     font-weight: var(--fontWeight-regular);
@@ -634,7 +659,7 @@ section.second-section.all-borders {
 }
 
 .learn-more-btn {
-    height: 75px;
+    height: clamp(60px, 5vw, 75px);
     padding: 15px;
     font-family: var(--header-btn-font);
     font-weight: var(--fontWeight-semiBold);
@@ -688,7 +713,7 @@ section.fourth-section.all-borders {
  
      width: 70%;
      margin: 50px auto 10px;
-     font-size: clamp(0.8rem, 3vw, 1.2rem);
+     font-size: clamp(0.8rem, 5vw, 1rem);
      
  }
 
@@ -700,10 +725,11 @@ section.fourth-section.all-borders {
  section.fifth-section.all-borders {
         border: var(--default-border) #0193FA;
         height: fit-content; 
-        width: 95%;
+        width: 70%;
         color: #fff; 
         margin-top: clamp(30px, 5vw, 98px);
         padding: 3%;
+        background-image: radial-gradient(circle at center, rgba(39, 106, 125, 0.8), #1a1c20 80% );
         
 
  }
@@ -726,12 +752,12 @@ section.fourth-section.all-borders {
     
     
 } 
- section.fifth-section > .benz-token-images-general-container.all-borders > div:nth-child(3) {
+ /* section.fifth-section > .benz-token-images-general-container.all-borders > div:nth-child(3) {
     
     margin-left: 4%;
     
     
-} 
+}  */
  
 
 
@@ -752,16 +778,27 @@ section.fifth-section.all-borders .benz-token-image.all-borders > img {
     transition: transform 8s;
     
 }
+
 section.fifth-section.all-borders .nowrap {
     white-space: normal;
 }
 
 
-section.fifth-section.all-borders  h4 {
-    font-size: clamp(1.2rem, 5vw, 1.75rem);
+section.fifth-section.all-borders > .benz-token-images-general-container.all-borders > div h4 {
+    font-size: clamp(1rem, 3vw, 1.75rem);
     font-weight: var(--fontWeight-medium);
-    margin: 10px auto;
+    width: 15ch;
+    height: 50px;
+    margin: 20px 0;
 }
+
+
+
+/* .third-section.all-borders .general-crypto-images.all-borders > div h4 {
+    font-size: 1.75rem;
+    font-weight: var(--fontWeight-medium);
+    margin-bottom: 10px;
+} */
 section.fifth-section.all-borders .benzSwap-token-image-container.all-borders {
     width: 67%;
     margin: auto;
@@ -788,13 +825,17 @@ section.fifth-section.all-borders .benzSwap-token-image-container.all-borders .b
 }
 
 
+/* .benz-token-contents.all-borders {
+    height: 40px;
+} */
+
 /* End of Fifth-Section - BenzSwap token Images */
 
 
 /* Beginning of Sixth Section - BenzSwap Roadmap */
 
 .sixth-section.all-borders {
-    margin: 30px auto;
+    margin: 30px auto 0;
     width: 100%;
 }
 
@@ -839,17 +880,24 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 .all-footer.all-borders  {
     width: 100%;
     margin: auto;
-    background-color: #000;
+    background-color: #1a1c20;
     min-height: 200px;
     padding: 1%;
     color: #fff;
     /* border: var(--default-border) #0193FA; */
+    /* border-top: var(--default-border) #f5f5f5; */
     border-radius: 5px;
     font-family: var(--main-content-font-family);
     /* margin-bottom: 0; */
-    /* position: fixed;
-    bottom: 0;
-    left: 0; */
+    /* position: sticky;
+    bottom: 0; */
+    /* left: 0; */
+
+}
+.all-footer.all-borders:hover  {
+    
+    border: var(--default-border) #0193FA;
+    
 
 }
 
@@ -906,11 +954,11 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     position: relative;
 }
 .footer-benzswap-logo.all-borders > a > img {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 50px;
     position: relative;
-    top: -20px;
-    /* left: -30px; */
+    top: -10px;
+    left: 30px;
     display: inline-block;
 }
 
@@ -1090,9 +1138,14 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
     /* || Universl Stylings  */
 
-    section.fifth-section.all-borders .nowrap {
-        white-space: nowrap;
+
+    .general-content.all-borders {
+        padding: 1% 8% 3%;
+        
     }
+    /* section.fifth-section.all-borders .nowrap {
+        white-space: nowrap;
+    } */
 
 
     /* .logo {
@@ -1217,11 +1270,15 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     /* End of Second-Section */
 
     /* Beginning of third Section - General Crypto images for max screen 1200px  */
+
+    .third-section.all-borders {
+        width: 90%;
+    }
     
     .third-section.all-borders .general-crypto-images.all-borders  > div img {
         /* border: var(--default-border) #0193FA; */
-        height: 110px;
-        width: 110px;
+        /* height: 110px;
+        width: 110px; */
         display: block;
         border-radius: 50%;
         display: block;
@@ -1236,22 +1293,19 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     
     /* Beginning of Fourth Section - Benz Token for max screen 1200px  */
 
-    .benz-token-text.all-borders {
-        font-weight: var(--fontWeight-semiBold);
-    }
-
+    
     /* Beginning of fifth Section - Benz Token images for max screen 1200px  */
-
-
+    
+    
     
     
     section.fifth-section.all-borders {
         border: var(--default-border) #0193FA;
         min-height: 10vh;
-        width: 100%;
+        width: 85%;
         color: rgb(255, 255, 255);
         margin-top: 30px;
-        padding: 2%;
+        padding: 1%;
         border-radius: 5px;
     }
 
@@ -1262,12 +1316,14 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     } 
     section.fifth-section > .benz-token-images-general-container.all-borders > div:nth-child(2), section.fifth-section > .benz-token-images-general-container.all-borders > div:nth-child(4) {
         margin-right: -5%;
-             
+        
     } 
-
+    
+    
     .benz-token-text.all-borders {
         padding: 0;
         margin: 0;
+        font-weight: var(--fontWeight-semiBold);
     }
 
     
@@ -1289,11 +1345,17 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     }
 
 
-    section.fifth-section > .benz-token-images-general-container.all-borders > div h4 {
+    /* section.fifth-section > .benz-token-images-general-container.all-borders > div h4 {
         
         font-size: 0.9rem;
+    } */
+
+    section.fifth-section.all-borders > .benz-token-images-general-container.all-borders > h4 {
+        font-size: clamp(1.2rem, 5vw, 1.75rem);
+        
     }
 
+    
 
     
 
@@ -1341,7 +1403,9 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
     .all-footer-contents.all-borders > div {
         width: 10%;
+        margin: 0 2% 5%;
     }
+    
 
     /* End of Footer Contents for Max Screen 1200px */
 }
@@ -1465,10 +1529,12 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     .first-section.all-borders {
     
         min-height: 25vh;
+        background-image: radial-gradient(circle at center, rgba(39, 106, 125, 0.9), #1a1c20 80% );
        
     }
 
-
+    
+    
     
     
     .background-video-animation.all-borders > video {
@@ -1580,7 +1646,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
 
     section.fifth-section.all-borders {
         
-        width: 100%;
+        width: clamp(75%, 5vw, 80%);
         padding: 0;
         
     }
@@ -1666,11 +1732,19 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
         
 
     .footer-benzswap-logo.all-borders > a > img {
-        width: 80px;
+        /* width: 80px;
         height: 80px;
         position: relative;
         top: -20px;
         left: -4px;
+        display: inline-block; */
+
+
+        width: 100px;
+        height: 30px;
+        position: relative;
+        top: -3px;
+        left: 30px;
         display: inline-block;
     }
     .footer-benzswap-logo.all-borders > a span {
@@ -1704,6 +1778,14 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
  
     /* || universal Stylings */
 
+    .general-content.all-borders {
+          
+    
+        background-image: radial-gradient(circle at top center, rgba(78, 160, 185, 0.5), #1a1c20 5% )
+        ;
+        
+    }
+
     main {
         margin-top: -50px;
     }
@@ -1720,8 +1802,10 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     .learn-more-btn {
         height: auto;
         font-size: 1rem;
+        margin: 0;
         
     }
+    
     /* End of Universal Stylings */
 
     /* || Navigation Bar - Logo */
@@ -1747,7 +1831,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
         width: 200px;
         height: 50px;
         top: 175px;
-        left: -8%;
+        left: -10%;
         
        
     }
@@ -1779,12 +1863,12 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     }
 
     .seamless-exchange.all-borders {
-        width: 100%;
+        width: 75%;
     }
 
     .welcome-to-BenzSwap-general-container.all-borders .launch-app-container.all-borders {
         /* border: var(--default-border); */
-        width: 90%;
+        /* width: 90%; */
         font-size: 0.8rem;
         margin-top: 30px;
        
@@ -1827,7 +1911,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     }
 
     .second-section.all-borders .introducing-benzswap-protocol.all-borders {
-        width:  95%;
+        width:  75%;
     }
 
     /* || End of Second Section - Introduction to BenzSwap for Xsm Screen */
@@ -1837,6 +1921,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     .third-section.all-borders {
         border: none;
         margin-top: 40px;
+        background-image: url();
     }
     .third-section.all-borders .general-crypto-images.all-borders {
         margin-top: 0;
@@ -1845,12 +1930,16 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     .third-section.all-borders .general-crypto-images.all-borders  > div {
         padding: 15px;
         margin-top: -30px;
+        /* background-image: radial-gradient(circle at right center, rgba(39, 106, 125, 0.8), #1a1c20 70% ); */
+
     }
     .third-section.all-borders .general-crypto-images.all-borders  > div > div {
         border: var(--default-border) #0193FA;
         box-shadow: 0px 0px 5px 1px #0193FA;
         width: 100%;
         padding: 7%;
+        background-image: radial-gradient(circle at right center, rgba(39, 106, 125, 1), #1a1c20 100% );
+        
         
     }
 
@@ -1882,7 +1971,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     }
     
     .fourth-section.all-borders .benz-token-content.all-borders {
-        width: 100%;
+        width: 75%;
     }
 
     /* || End of fourth Section - Benz Token for Xsm Screen */
@@ -1892,9 +1981,10 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     section.fifth-section.all-borders {
         border:none;
         min-height: fit-content;
-        width: 95%;
+        /* width: 95%; */
         margin-top: 40px;
         padding: 0;
+        background-image: url();
     }
     
     section.fifth-section > .benz-token-images-general-container.all-borders {
@@ -1903,16 +1993,17 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
         margin-left: 0;
     }
     
-    section.fifth-section > .benz-token-images-general-container.all-borders > div:nth-child(3) {
+    /* section.fifth-section > .benz-token-images-general-container.all-borders > div:nth-child(3) {
         margin-left: 0;
-    }
+    } */
     section.fifth-section > .benz-token-images-general-container.all-borders > div {
-        width: 100%;
+        width: 95%;
         margin: 15px  auto;
         padding: 20px;
         border: var(--default-border) #0193FA;
         box-shadow: 0px 0px 5px 1px #0193FA;
         border-radius: 5px;
+        background-image: radial-gradient(circle at right center, rgba(39, 106, 125, 0.8), #1a1c20 100% );
     }
     
     /* || End of fifth Section - Token Images for Xsm Screen */
@@ -1942,7 +2033,7 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     }
     .newsletter-details.all-borders {
         display: block !important;
-        margin-left: 25%;
+        /* margin-left: 25%; */
     }
 
     
@@ -1950,14 +2041,15 @@ section.sixth-section.all-borders .benzSwap-roadmap-background-image.all-borders
     
     .logo-and-newsletter-for-mobile.all-borders{
         display: flex;
+        justify-content: space-between;
         width: 100% !important;
-        margin: 5% 5% !important;
+        margin: 5% auto !important;
     }
     
     
     .footer-benzswap-logo.all-borders {
         position: relative;
-        left: -7%;
+        left: 0;
         top: -5px;
     }
     .footer-benzswap-logo.all-borders > .benzSwap-logo-footer-text.all-borders {
@@ -2008,7 +2100,27 @@ width: 25%;
 }
 
 
+@media screen and (max-width: 350px) {
+    .welcome-to-BenzSwap-general-container.all-borders .nowrap, .introducing-benzswap.all-borders .nowrap, .fourth-section.all-borders .benz-token.all-borders .nowrap    {
+        white-space: normal;
+        
+    }
+    
 
+    .footer-benzswap-logo.all-borders {
+        position: relative;
+        left: 0;
+        top: -5px;
+    }
+    .footer-benzswap-logo.all-borders > a > img {
+        width: 80px;
+        height: 25px;
+        position: relative;
+        top: 6px;
+        left: 20px;
+        display: inline-block;
+    }
+}
 
 
 
